@@ -1,0 +1,24 @@
+% нумерованный параграф с отступом
+\newcommand{\paranum}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{paragraph}}
+\newcommand{\numparagraph}[1]{
+  \addtocounter{paragraph}{1}
+  \addcontentsline{toc}{paragraph}{\paranum\hspace{0.8cm}#1}
+  \begin{center}
+    \vspace{12pt}
+      \paranum\hspace{0.25cm}#1
+    \vspace{10pt}
+  \end{center}
+}
+% приложение с правой выключкой
+\newcommand{\rightappendix}[1]{
+  \addtocounter{appendix}{1}
+  \addcontentsline{toc}{subsection}{Приложение \Asbuk{appendix}\hspace{0.3cm}#1}
+  \flushright{\uppercase{Приложение} \Asbuk{appendix}}
+  \begin{center}
+    \textbf{\uppercase{#1}}
+  \end{center}
+}
+% стрелка вправо
+\newcommand{\rarr}{$\rightarrow$~}
+% кириллица в формулах
+\newcommand{\fc}[1]{\textup{#1}}

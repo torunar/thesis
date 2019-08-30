@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1052.3622"
+   height="1452.7559"
+   viewBox="-121 38 575.79678 805.80768"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="used-plugins.svg"
+   inkscape:export-filename="/home/torunar/edu/Диплом/tex/drafts/used-plugins.png"
+   inkscape:export-xdpi="90.311111"
+   inkscape:export-ydpi="90.311111">
+  <metadata
+     id="metadata156">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs154" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1342"
+     inkscape:window-height="719"
+     id="namedview152"
+     showgrid="false"
+     units="mm"
+     height="410mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.72456085"
+     inkscape:cx="550.49798"
+     inkscape:cy="767.58424"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <line
+     style="fill:none;stroke:#000000;stroke-width:0.98269232"
+     x1="158.37762"
+     y1="202.88525"
+     x2="158.37762"
+     y2="680.26733"
+     id="line4" />
+  <g
+     id="g6"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <path
+       style="fill:#ffffff;stroke-width:1.85059404"
+       d="M 46.6667,40 233.333,40 C 259.107,40 280,53.4314 280,70 c 0,16.5686 -20.893,30 -46.667,30 L 46.6667,100 C 20.8934,100 0,86.5686 0,70 0,53.4314 20.8934,40 46.6667,40 z"
+       id="path8"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       d="M 46.6667,40 233.333,40 C 259.107,40 280,53.4314 280,70 c 0,16.5686 -20.893,30 -46.667,30 L 46.6667,100 C 20.8934,100 0,86.5686 0,70 0,53.4314 20.8934,40 46.6667,40"
+       id="path10"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="20.8"
+       style="font-size:20.79999923999999822px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:1.85059404"
+       x="140"
+       y="72.599998"
+       id="text12">
+      <tspan
+         x="140"
+         y="72.599998"
+         id="tspan14"
+         style="stroke-width:1.85059404">НАЧАЛО</tspan>
+    </text>
+  </g>
+  <g
+     id="g16"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <rect
+       style="fill:#ffffff;stroke-width:1.85059404"
+       x="-40"
+       y="240"
+       width="361.39999"
+       height="80"
+       id="rect18" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       x="-40"
+       y="240"
+       width="361.39999"
+       height="80"
+       id="rect20" />
+    <text
+       font-size="20.8"
+       style="font-size:20.79999923999999822px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:1.85059404"
+       x="140.7"
+       y="268.60001"
+       id="text22">
+      <tspan
+         x="140.7"
+         y="268.60001"
+         id="tspan24"
+         style="stroke-width:1.85059404">Выбрать из XML-дерева элементы &lt;node&gt;</tspan>
+      <tspan
+         x="140.7"
+         y="294.60001"
+         id="tspan26"
+         style="stroke-width:1.85059404">nodes = xml-&gt;getElements(&quot;node&quot;)</tspan>
+    </text>
+  </g>
+  <g
+     id="g28"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <rect
+       style="fill:#ffffff;stroke-width:1.85059404"
+       x="0"
+       y="120"
+       width="280"
+       height="100"
+       id="rect30" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       x="0"
+       y="120"
+       width="280"
+       height="100"
+       id="rect32" />
+    <text
+       font-size="20.8"
+       style="font-size:20.79999923999999822px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:1.85059404"
+       x="140"
+       y="158.60001"
+       id="text34">
+      <tspan
+         x="140"
+         y="158.60001"
+         id="tspan36"
+         style="stroke-width:1.85059404">Создать пустой список</tspan>
+      <tspan
+         x="140"
+         y="184.60001"
+         id="tspan38"
+         style="stroke-width:1.85059404">usedPlugins = [ ]</tspan>
+    </text>
+  </g>
+  <g
+     id="g40"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <rect
+       style="fill:#ffffff;stroke-width:1.85059404"
+       x="0"
+       y="460"
+       width="281.60001"
+       height="60"
+       id="rect42" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       x="0"
+       y="460"
+       width="281.60001"
+       height="60"
+       id="rect44" />
+    <text
+       font-size="20.8"
+       style="font-size:20.79999923999999822px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:1.85059404"
+       x="140.8"
+       y="491.60001"
+       id="text46">
+      <tspan
+         x="140.8"
+         y="491.60001"
+         id="tspan48"
+         style="stroke-width:1.85059404">Выбрать следующий node из nodes</tspan>
+    </text>
+  </g>
+  <g
+     id="g50"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <polygon
+       style="fill:#ffffff;stroke-width:1.85059404"
+       points="200,340 240,380 240,440 40,440 40,380 80,340 "
+       id="polygon52" />
+    <polygon
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       points="200,340 240,380 240,440 40,440 40,380 80,340 "
+       id="polygon54" />
+  </g>
+  <text
+     font-size="20.8"
+     style="font-size:11.09350446000000012px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:0.98269232"
+     x="158.37762"
+     y="345.30334"
+     id="text56">
+    <tspan
+       x="158.37762"
+       y="345.30334"
+       id="tspan58"
+       style="stroke-width:0.98269232;font-size:11.09350446000000012px">Nodes</tspan>
+    <tspan
+       x="158.37762"
+       y="359.10971"
+       id="tspan60"
+       style="stroke-width:0.98269232;font-size:11.09350446000000012px">пока не достигнут</tspan>
+    <tspan
+       x="158.37762"
+       y="372.91608"
+       id="tspan62"
+       style="stroke-width:0.98269232;font-size:11.09350446000000012px">конец массива nodes</tspan>
+  </text>
+  <g
+     id="g64"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <polygon
+       style="fill:#ffffff;stroke-width:1.85059404"
+       points="200,980 220,960 220,920 60,920 60,960 80,980 "
+       id="polygon66" />
+    <polygon
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       points="200,980 220,960 220,920 60,920 60,960 80,980 "
+       id="polygon68" />
+  </g>
+  <text
+     font-size="20.8"
+     style="font-size:11.09350446000000012px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:0.98269232"
+     x="158.37762"
+     y="653.71661"
+     id="text70">
+    <tspan
+       x="158.37762"
+       y="653.71661"
+       id="tspan72"
+       style="stroke-width:0.98269232;font-size:11.09350446000000012px">Nodes</tspan>
+  </text>
+  <g
+     id="g74"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <rect
+       style="fill:#ffffff;stroke-width:1.85059404"
+       x="-60"
+       y="540"
+       width="400"
+       height="80"
+       id="rect76" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       x="-60"
+       y="540"
+       width="400"
+       height="80"
+       id="rect78" />
+    <text
+       font-size="20.8"
+       style="font-size:20.79999923999999822px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:1.85059404"
+       x="140"
+       y="568.59998"
+       id="text80">
+      <tspan
+         x="140"
+         y="568.59998"
+         id="tspan82"
+         style="stroke-width:1.85059404">Определить используемое узлом расширение</tspan>
+      <tspan
+         x="140"
+         y="594.59998"
+         id="tspan84"
+         style="stroke-width:1.85059404">plugin = node-&gt;attribute(&quot;plugin&quot;)</tspan>
+    </text>
+  </g>
+  <g
+     id="g86"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <polygon
+       style="fill:#ffffff;stroke-width:1.85059404"
+       points="140,762.557 -60,701.278 140,640 340,701.278 "
+       id="polygon88" />
+    <polygon
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       points="140,762.557 -60,701.278 140,640 340,701.278 "
+       id="polygon90" />
+    <text
+       font-size="20.8"
+       style="font-size:20.79999923999999822px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:1.85059404"
+       x="140"
+       y="689.87799"
+       id="text92">
+      <tspan
+         x="140"
+         y="689.87799"
+         id="tspan94"
+         style="stroke-width:1.85059404">plugin содержится</tspan>
+      <tspan
+         x="140"
+         y="715.87799"
+         id="tspan96"
+         style="stroke-width:1.85059404">в plugins</tspan>
+    </text>
+  </g>
+  <g
+     id="g98"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <rect
+       style="fill:#ffffff;stroke-width:1.85059404"
+       x="-60"
+       y="800"
+       width="400"
+       height="80"
+       id="rect100" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       x="-60"
+       y="800"
+       width="400"
+       height="80"
+       id="rect102" />
+    <text
+       font-size="20.8"
+       style="font-size:20.79999923999999822px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:1.85059404"
+       x="140"
+       y="828.59998"
+       id="text104">
+      <tspan
+         x="140"
+         y="828.59998"
+         id="tspan106"
+         style="stroke-width:1.85059404">Добавить plugin к plugins</tspan>
+      <tspan
+         x="140"
+         y="854.59998"
+         id="tspan108"
+         style="stroke-width:1.85059404">usedPlugins &lt;&lt; plugin</tspan>
+    </text>
+  </g>
+  <polyline
+     style="fill:none;stroke:#000000;stroke-width:1.85059404"
+     points="-60,701.278 -120,701.278 -120,900 140,900 140,900 "
+     id="polyline110"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)" />
+  <text
+     font-size="20.8"
+     style="font-size:11.09350446000000012px;font-style:italic;font-weight:normal;text-anchor:start;fill:#000000;font-family:GOST type A;stroke-width:0.98269232"
+     x="41.554432"
+     y="510.34268"
+     id="text112">
+    <tspan
+       x="41.554432"
+       y="510.34268"
+       id="tspan114"
+       style="stroke-width:0.98269232;font-size:11.09350446000000012px">ДА</tspan>
+  </text>
+  <text
+     font-size="20.8"
+     style="font-size:11.09350446000000012px;font-style:italic;font-weight:normal;text-anchor:start;fill:#000000;font-family:GOST type A;stroke-width:0.98269232"
+     x="168.99792"
+     y="563.44409"
+     id="text116">
+    <tspan
+       x="168.99792"
+       y="563.44409"
+       id="tspan118"
+       style="stroke-width:0.98269232;font-size:11.09350446000000012px">НЕТ</tspan>
+  </text>
+  <g
+     id="g120"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <path
+       style="fill:#ffffff;stroke-width:1.85059404"
+       d="m 46.6667,1000 186.6663,0 c 25.774,0 46.667,13.43 46.667,30 0,16.57 -20.893,30 -46.667,30 l -186.6663,0 C 20.8934,1060 0,1046.57 0,1030 c 0,-16.57 20.8934,-30 46.6667,-30 z"
+       id="path122"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       d="m 46.6667,1000 186.6663,0 c 25.774,0 46.667,13.43 46.667,30 0,16.57 -20.893,30 -46.667,30 l -186.6663,0 C 20.8934,1060 0,1046.57 0,1030 c 0,-16.57 20.8934,-30 46.6667,-30"
+       id="path124"
+       inkscape:connector-curvature="0" />
+    <text
+       font-size="20.8"
+       style="font-size:20.79999923999999822px;font-style:italic;font-weight:normal;text-anchor:middle;fill:#000000;font-family:GOST type A;stroke-width:1.85059404"
+       x="140"
+       y="1032.6"
+       id="text126">
+      <tspan
+         x="140"
+         y="1032.6"
+         id="tspan128"
+         style="stroke-width:1.85059404">КОНЕЦ</tspan>
+    </text>
+  </g>
+  <g
+     id="g130"
+     transform="matrix(0.53101453,0,0,0.53101453,84.035593,149.25281)"
+     style="stroke-width:1.85059404">
+    <line
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       x1="320"
+       y1="120"
+       x2="320"
+       y2="220"
+       id="line132" />
+    <line
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       x1="320"
+       y1="120"
+       x2="340"
+       y2="120"
+       id="line134" />
+    <line
+       style="fill:none;stroke:#000000;stroke-width:1.85059404"
+       x1="320"
+       y1="220"
+       x2="340"
+       y2="220"
+       id="line136" />
+    <text
+       font-size="12.8"
+       style="font-size:12.80000019000000044px;font-style:normal;font-weight:normal;text-anchor:middle;fill:#000000;font-family:sans-serif;stroke-width:1.85059404"
+       x="330.5"
+       y="176.5"
+       id="text138">
+      <tspan
+         x="330.5"
+         y="176.5"
+         id="tspan140"
+         style="stroke-width:1.85059404" />
+    </text>
+  </g>
+  <line
+     style="fill:none;stroke:#000000;stroke-width:0.98269232;stroke-dasharray:5.31014530000000029"
+     x1="233.25281"
+     y1="239.52527"
+     x2="253.96024"
+     y2="239.52527"
+     id="line142" />
+  <text
+     font-size="20.8"
+     style="font-size:11.09350446000000012px;font-style:italic;font-weight:normal;text-anchor:start;fill:#000000;font-family:GOST type A;stroke-width:0.98269232"
+     x="261.39444"
+     y="228.48013"
+     id="text144">
+    <tspan
+       x="261.39444"
+       y="228.48013"
+       id="tspan146"
+       style="stroke-width:0.98269232;font-size:11.09350446000000012px">Список расширений,</tspan>
+    <tspan
+       x="261.39444"
+       y="242.28651"
+       id="tspan148"
+       style="stroke-width:0.98269232;font-size:11.09350446000000012px">задействованных</tspan>
+    <tspan
+       x="261.39444"
+       y="256.0929"
+       id="tspan150"
+       style="stroke-width:0.98269232;font-size:11.09350446000000012px">узлами схемы</tspan>
+  </text>
+</svg>

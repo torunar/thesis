@@ -1,0 +1,45 @@
+[file_prefs]
+final_new_line=false
+ensure_convert_new_lines=true
+strip_trailing_spaces=true
+replace_tabs=false
+
+[indentation]
+indent_width=2
+indent_type=0
+indent_hard_tab_width=8
+detect_indent=false
+detect_indent_width=false
+indent_mode=2
+
+[project]
+name=drafts
+base_path=/home/torunar/edu/Диплом/tex
+description=
+file_patterns=
+
+[long line marker]
+long_line_behaviour=1
+long_line_column=72
+
+[files]
+current_page=3
+FILE_NAME_0=0;LaTeX;0;EUTF-8;0;1;0;%2Fhome%2Ftorunar%2Fedu%2FДиплом%2Ftex%2Fdraft-1.tex;0;2
+FILE_NAME_1=0;LaTeX;0;EUTF-8;0;1;0;%2Fhome%2Ftorunar%2Fedu%2FДиплом%2Ftex%2Fdraft-2.tex;0;2
+FILE_NAME_2=0;LaTeX;0;EUTF-8;0;1;0;%2Fhome%2Ftorunar%2Fedu%2FДиплом%2Ftex%2Fdraft-3.tex;0;2
+FILE_NAME_3=0;LaTeX;0;EUTF-8;0;1;0;%2Fhome%2Ftorunar%2Fedu%2FДиплом%2Ftex%2Fdraft-4.tex;0;2
+
+[VTE]
+last_dir=/home/torunar
+
+[build-menu]
+LaTeXFT_00_LB=pdftex
+LaTeXFT_00_CM=
+LaTeXFT_00_WD=
+LaTeXFT_01_LB=xelatex
+LaTeXFT_01_CM=xelatex -output-directory="tmp" -synctex=1 -file-line-error-style "draft-1.tex"; xelatex -output-directory="tmp" -synctex=1 -file-line-error-style "draft-2.tex"; xelatex -output-directory="tmp" -synctex=1 -file-line-error-style "draft-3.tex"; xelatex -output-directory="tmp" -synctex=1 -file-line-error-style "draft-4.tex"
+LaTeXFT_01_WD=
+LaTeXFT_02_LB=view
+LaTeXFT_02_CM=evince "%e.pdf"
+LaTeXFT_02_WD=
+filetypes=LaTeX;

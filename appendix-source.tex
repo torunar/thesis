@@ -1,0 +1,2674 @@
+\lstset{
+  basicstyle=\ttfamily\scriptsize
+}
+
+\subsubsection*{Содержимое файла addnodedialog.h}
+
+\begin{lstlisting}
+#ifndef ADDNODEDIALOG_H
+#define ADDNODEDIALOG_H
+
+#include <QDialog>
+#include <QDebug>
+
+namespace Ui {
+class AddNodeDialog;
+}
+
+class AddNodeDialog : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit AddNodeDialog(QStringList plugins, QWidget *parent = 0);
+    ~AddNodeDialog();
+
+signals:
+    void itemSelected(QString item);
+
+private:
+    Ui::AddNodeDialog *ui;
+
+public slots:
+    void getSelection();
+    void unlockAdd();
+};
+
+#endif // ADDNODEDIALOG_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла connectiondialog.h}
+
+\begin{lstlisting}
+#ifndef CONNECTIONDIALOG_H
+#define CONNECTIONDIALOG_H
+
+#include <QListWidgetItem>
+#include <QDialog>
+
+#include "elementnode.h"
+
+namespace Ui {
+class ConnectionDialog;
+}
+
+class ConnectionDialog : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit ConnectionDialog(QWidget *parent = 0);
+    ConnectionDialog(QList<UNode *> nodes, QWidget *parent = 0);
+    ~ConnectionDialog();
+
+    uint inCounter, outCounter;
+    void setCounters(uint inCounter, uint outCounter);
+
+    // indecies of output and input
+    int selectedInput, selectedOutput;
+    QPair<int, int> getConnectors();
+    void            setConnectors(QPair<int, int> connectors);
+
+signals:
+    void selectedConnectors(int output, int input);
+
+private:
+    Ui::ConnectionDialog *ui;
+
+public slots:
+    void setInput(QListWidgetItem *);
+    void setOutput(QListWidgetItem *);
+};
+
+#endif // CONNECTIONDIALOG_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла document.h}
+
+\begin{lstlisting}
+#ifndef DOCUMENT_H
+#define DOCUMENT_H
+
+#include <QWidget>
+#include <QScrollArea>
+#include <QMdiArea>
+#include <QMdiSubWindow>
+#include <QtXml/QDomDocument>
+#include <QLabel>
+#include <QObject>
+#include <QFile>
+#include <QFileInfo>
+#include <QStack>
+
+#include "labelnode.h"
+#include "elementnode.h"
+#include "linknode.h"
+
+typedef enum {
+    Stub  = 0,
+    Node  = 1,
+    Label = 2,
+    Link  = 3
+} NodeType;
+
+typedef enum {
+    Default    = 0,
+    SelectNode = 1
+} DocumentMode;
+
+class Document: public QObject
+{
+    Q_OBJECT
+
+public:
+    Document(QMdiSubWindow *parent = 0);
+    ~Document(){}
+
+    void  attachToWindow(QMdiSubWindow *parent);
+    QSize getSize();
+    void  resize(const QSize size);
+    void  resize(const int w, const int h);
+
+    bool isChanged();
+    void setChanged(bool changed);
+
+    void addLabel(const QString text,  bool skipHistory = false);
+    void addLabel(const QDomNode node, bool skipHistory = false);
+
+    void addNode(Plugin *plugin,       bool skipHistory = false);
+    bool addNode(const QDomNode node,  bool skipHistory = false);
+
+    void addLink(QList<UNode *> elementNodes, QPair<int, int> connectors, bool skipHistory = false);
+    void addLink(const QDomNode node,  bool skipHistory = false);
+
+    UNode *getNodeByID(QString id);
+    bool renderNodes();
+
+    Plugin     *getPlugin(QString name);
+    QStringList getPlugins();
+    QStringList getUsedPlugins();
+    void        setPlugins(QList<Plugin*> plugins);
+
+    void setMode(DocumentMode documentMode);
+    void setNodeCounter(uint counter);
+
+    void resetActiveElement();
+
+    void pushToHistory();
+
+    QPixmap       getImage();
+    QString       getVHDL();
+
+    QDomDocument *getXml();
+    QString       title;
+    QString       filename;
+
+signals:
+    void altered(bool);
+    void elementActivated(UNode*, uint);
+
+public slots:
+    void handleChildSignals(AlterType type);
+    void setActiveElement();
+    bool save(QString filename);
+    bool load(QString filename);
+    void addNode(QString plugin);
+
+    void undo();
+
+private:
+    QMdiSubWindow *parent;
+    QScrollArea   *container;
+    QFrame        *workarea;
+    QDomDocument  *xml;
+
+    bool               changed;
+    DocumentMode       mode;
+    QStack<QByteArray> history;
+
+    QList<Plugin*> plugins;
+
+    UNode *activeElement;
+    uint   nodeCounter;
+};
+
+#endif // DOCUMENT_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла documentoptionsdialog.h}
+
+\begin{lstlisting}
+#ifndef DOCUMENTOPTIONSDIALOG_H
+#define DOCUMENTOPTIONSDIALOG_H
+
+#include <QDialog>
+
+namespace Ui {
+class DocumentOptionsDialog;
+}
+
+class DocumentOptionsDialog : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit DocumentOptionsDialog(QWidget *parent = 0);
+    ~DocumentOptionsDialog();
+    void setDimensions(QSize size);
+    QSize getDimensions();
+
+private:
+    Ui::DocumentOptionsDialog *ui;
+};
+
+#endif // DOCUMENTOPTIONSDIALOG_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла docwindow.h}
+
+\begin{lstlisting}
+#ifndef DOCWINDOW_H
+#define DOCWINDOW_H
+
+#include <QWidget>
+#include <QMdiSubWindow>
+#include <QMessageBox>
+#include <QFileDialog>
+#include <QInputDialog>
+#include <QString>
+#include <QObject>
+#include <QStatusBar>
+
+#include "document.h"
+#include "addnodedialog.h"
+#include "documentoptionsdialog.h"
+#include "sourceviewdialog.h"
+
+class DocWindow : public QMdiSubWindow {
+    Q_OBJECT
+
+public:
+    DocWindow(QWidget *parent);
+    ~DocWindow(){}
+
+    void      setTitle(const QString title);
+    Document *getDocument();
+
+    void addNode(Plugin *plugin);
+    void attachStatusBar(QStatusBar *statusBar);
+
+private:
+    Document      *document;
+    QStatusBar    *statusBar;
+    QList<UNode *> linkNodes;
+
+    bool renderNodes();
+    void setStatus(QString text, int timeout);
+
+protected:
+    void closeEvent(QCloseEvent *closeEvent);
+
+public slots:
+    void setChanged(bool changed);
+    void addLabel();
+    void addNode();
+    void addLink();
+    void save();
+    void saveAs();
+    bool load();
+    void setLinkNode(UNode *node, uint nodeCounter);
+    void showOptionsDialog();
+    void showSaveImageDialog();
+    void viewVHDL();
+};
+
+#endif // DOCWINDOW_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла elementnode.h}
+
+\begin{lstlisting}
+#ifndef ELEMENTNODE_H
+#define ELEMENTNODE_H
+
+#include "plugin.h"
+#include "unode.h"
+#include "nodepropertiesdialog.h"
+#include <QSettings>
+
+#include <QDebug>
+
+class ElementNode : public UNode
+{
+    Q_OBJECT
+
+public:
+    ElementNode(                                                        QWidget *parent = 0);
+    ElementNode(                     Plugin *plugin, QDomDocument *xml, QWidget* parent = 0);
+    ElementNode(const QDomNode node, Plugin *plugin, QDomDocument *xml, QWidget *parent = 0);
+    ~ElementNode(){}
+    Plugin *getPlugin();
+    QString getName();
+    QString getInput(int i);
+    QString getOutput(int i);
+
+protected:
+
+private:
+    Plugin    *plugin;
+    QSettings *settings;
+
+signals:
+
+public slots:
+    void showContextMenu(const QPoint &pos);
+
+private slots:
+    void edit();
+};
+
+#endif // ELEMENTNODE_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла labelnode.h}
+
+\begin{lstlisting}
+#ifndef LABELNODE_H
+#define LABELNODE_H
+
+#include <QInputDialog>
+#include <QMdiSubWindow>
+#include "unode.h"
+
+#include <QDebug>
+
+class LabelNode : public UNode
+{
+    Q_OBJECT
+public:
+    LabelNode(QWidget *parent = 0);
+    LabelNode(const QString  text, QDomDocument *xml, QWidget *parent = 0);
+    LabelNode(const QDomNode node, QDomDocument *xml, QWidget *parent = 0);
+    ~LabelNode(){}
+
+protected:
+
+private:
+
+signals:
+
+public slots:
+    void showContextMenu(const QPoint &pos);
+
+private slots:
+    void edit();
+};
+
+#endif // LABELNODE_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла linknode.h}
+
+\begin{lstlisting}
+#ifndef LINKNODE_H
+#define LINKNODE_H
+
+#include <QImage>
+#include <QPainter>
+#include <QSettings>
+
+#include "connectiondialog.h"
+
+class LinkNode : public UNode
+{
+    Q_OBJECT
+public:
+    LinkNode(                     QList<UNode *> elementNodes, QPair<int, int> connectors, QDomDocument *xml, QWidget *parent = 0);
+    LinkNode(const QDomNode node, QList<UNode *> elementNodes,                             QDomDocument *xml, QWidget *parent = 0);
+    ~LinkNode(){}
+    bool hasNode(QString nodeID);
+
+private:
+    QPainter       *painter;
+    QImage          buffer;
+    QPen            pen;
+    QSettings      *settings;
+
+    QList<UNode *>  nodes;
+    QPair<int, int> connectors;
+    QVector<QPoint> line;
+
+protected:
+    void paintEvent(QPaintEvent *);
+    void mouseMoveEvent(QMouseEvent *);
+
+signals:
+    void showConnectionDialog(QList<UNode *> nodes);
+
+public slots:
+    void showContextMenu(const QPoint&pos);
+    void edit();
+};
+
+#endif // LINKNODE_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла mainwindow.h}
+
+\begin{lstlisting}
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
+
+#include <QMainWindow>
+#include <QtGui>
+#include <QtWebKitWidgets/QWebView>
+#include <QPainterPath>
+
+#include "docwindow.h"
+#include "pluginlistwindow.h"
+#include "preferencesdialog.h"
+
+namespace Ui {
+class MainWindow;
+}
+
+class MainWindow : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    explicit MainWindow(QWidget *parent = 0);
+    Document *activeDocument;
+    DocWindow *activeWindow;
+
+    ~MainWindow();
+    QSettings *settings;
+
+    void initPluginsToolbar();
+
+private:
+    QList<Plugin *> plugins;
+    Ui::MainWindow *ui;
+    QMdiArea *mdiArea;
+    void loadPlugins();
+    void disconnectSlots();
+    void connectSlots();
+
+public slots:
+    void createDocument();
+    void setActiveDocument();
+    void quit();
+    void load();
+    void showPluginListWindow();
+    void findPlugin();
+    void showPreferencesDialog();
+
+protected:
+    void closeEvent(QCloseEvent *);
+};
+
+#endif // MAINWINDOW_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла nodepropertiesdialog.h}
+
+\begin{lstlisting}
+#ifndef NODEPROPERTIESDIALOG_H
+#define NODEPROPERTIESDIALOG_H
+
+#include <QDialog>
+#include <QAbstractButton>
+
+namespace Ui {
+class NodePropertiesDialog;
+}
+
+class NodePropertiesDialog : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit NodePropertiesDialog(QWidget *parent = 0);
+    ~NodePropertiesDialog();
+    void setSource(QString source);
+    void setInputs(QVector<QString> inputs);
+    void setOutputs(QVector<QString> outputs);
+
+private:
+    Ui::NodePropertiesDialog *ui;
+    QVector<QString> inputs;
+    QVector<QString> outputs;
+
+public slots:
+    void save();
+};
+
+#endif // NODEPROPERTIESDIALOG_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла plugin.h}
+
+\begin{lstlisting}
+#ifndef PLUGIN_H
+#define PLUGIN_H
+
+#include <QVector>
+#include <QtXml/QDomElement>
+#include <QFile>
+#include <QDir>
+#include <QDebug>
+#include <QPixmap>
+
+class Plugin
+{
+private:
+    QDomElement node;
+    QPixmap pixmap;
+    QVector<QString> getElementAttributes(QString element, QString attribute);
+
+public:
+    Plugin(QString filename);   // load from file
+    Plugin(QDir directory);     // load from path
+    Plugin(QDomElement node);   // load from proto
+    bool isValid();
+    QString getName();
+    QString getAuthor();
+    QString getDescription();
+    QVector<QString> getInputs();
+    QVector<QString> getOutputs();
+    QString getSource();
+    QPixmap getPixmap(QSize size);
+    QDomElement getNode();
+    static QList<Plugin *> loadByList(QDir directory, QStringList filterPlugins);
+};
+
+#endif // PLUGIN_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла pluginlistwindow.h}
+
+\begin{lstlisting}
+#ifndef PLUGINLISTWINDOW_H
+#define PLUGINLISTWINDOW_H
+
+#include <QDialog>
+#include <QStatusBar>
+#include <QFile>
+#include <QDir>
+#include <QSettings>
+#include <QTreeWidgetItem>
+#include "plugin.h"
+
+#include <QDebug>
+
+namespace Ui {
+class PluginListWindow;
+}
+
+enum class LCol{
+    isEnabled = 0,
+    pluginName = 1,
+    isOnPanel = 2,
+    author = 3,
+    description = 4
+
+};
+
+class PluginListWindow : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit PluginListWindow(QWidget *parent = 0);
+    ~PluginListWindow();
+
+private:
+    Ui::PluginListWindow *ui;
+    QSettings *settings;
+    QDir pluginsDir;
+    QList<QTreeWidgetItem*> loadPluginsList();
+
+public slots:
+    void refreshList();
+    void save();
+};
+
+#endif // PLUGINLISTWINDOW_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла preferencesdialog.h}
+
+\begin{lstlisting}
+#ifndef PREFERENCESDIALOG_H
+#define PREFERENCESDIALOG_H
+
+#include <QDialog>
+#include <QSettings>
+#include <QFileDialog>
+
+namespace Ui {
+class PreferencesDialog;
+}
+
+class PreferencesDialog : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit PreferencesDialog(QWidget *parent = 0);
+    ~PreferencesDialog();
+
+public slots:
+    void browsePath();
+    void saveOptions();
+
+private:
+    Ui::PreferencesDialog *ui;
+    QSettings *settings;
+};
+
+#endif // PREFERENCESDIALOG_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла sourceviewdialog.h}
+
+\begin{lstlisting}
+#ifndef SOURCEVIEWDIALOG_H
+#define SOURCEVIEWDIALOG_H
+
+#include <QDialog>
+#include <QWebView>
+#include <QFile>
+#include <QDebug>
+
+#include <QProcess>
+#include <QTemporaryFile>
+
+namespace Ui {
+class SourceViewDialog;
+}
+
+class SourceViewDialog : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit SourceViewDialog(QString vhdlSource = "", QWidget *parent = 0);
+    ~SourceViewDialog();
+
+    void setSource(QString src);
+
+private:
+    QString htmlTemplate = "<html><head><style>%1</style><script type=\"text/javascript\">%2</script></head><body><div contenteditable=\"true\" id=\"code\">%3</div><script type=\"text/javascript\">%4</script></body></html>";
+    QString vhdlSource;
+    QWebView *view;
+    Ui::SourceViewDialog *ui;
+    bool ghdlNotFound = false;
+
+public slots:
+    void validate();
+    void handleError(QProcess::ProcessError);
+};
+
+#endif // SOURCEVIEWDIALOG_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла unode.h}
+
+\begin{lstlisting}
+#ifndef UNODE_H
+#define UNODE_H
+
+#include <QLabel>
+#include <QMouseEvent>
+#include <QEvent>
+// context menu
+#include <QMenu>
+// xml
+#include <QtXml/QDomElement>
+// id in xml
+#include <QDateTime>
+
+#include <QDebug>
+
+typedef enum {
+    None    = 0,
+    Moved   = 1,
+    Edited  = 2,
+    Deleted = 3
+} AlterType;
+
+class UNode : public QLabel
+{
+    Q_OBJECT
+public:
+    UNode(              QWidget *parent = 0);
+    UNode(QString text, QWidget *parent = 0);
+    UNode(const UNode &unode);
+    ~UNode();
+
+    QDomElement   node;
+    QDomDocument *xml;
+
+    QString       getID();
+    QString       attr(QString attr);
+    void          setNodeAttribute(QString attr, double  value);
+    void          setNodeAttribute(QString attr, float   value);
+    void          setNodeAttribute(QString attr, uint    value);
+    void          setNodeAttribute(QString attr, int     value);
+    void          setNodeAttribute(QString attr, QString value);
+
+    void setPosition(int x, int y);
+
+protected:
+    QPoint startPos;
+    bool   dragged = false;
+
+    void mousePressEvent(QMouseEvent *ev);
+    void mouseMoveEvent(QMouseEvent *ev);
+    void mouseReleaseEvent(QMouseEvent *);
+    void performDrag(const QPoint endPos);
+
+signals:
+    void altered(AlterType);
+    void activated();
+
+public slots:
+    void remove();
+
+};
+
+#endif // UNODE_H
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла addnodedialog.cpp}
+
+\begin{lstlisting}
+#include "addnodedialog.h"
+#include "ui_addnodedialog.h"
+
+AddNodeDialog::AddNodeDialog(QStringList plugins, QWidget *parent) : QDialog(parent), ui(new Ui::AddNodeDialog) {
+    ui->setupUi(this);
+    foreach(QString plugin, plugins) {
+        this->ui->pluginList->addItem(plugin);
+    }
+    connect(this->ui->cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
+    connect(this->ui->pluginList, SIGNAL(itemClicked(QListWidgetItem*)), this, SLOT(unlockAdd()));
+    connect(this->ui->pluginList, SIGNAL(itemActivated(QListWidgetItem*)), this, SLOT(getSelection()));
+    connect(this->ui->addButton, SIGNAL(clicked()), this, SLOT(getSelection()));
+}
+
+AddNodeDialog::~AddNodeDialog()
+{
+    delete ui;
+}
+
+void AddNodeDialog::getSelection(){
+    QString selectedItem = "";
+    if (this->ui->pluginList->selectedItems().size() > 0) {
+        selectedItem = this->ui->pluginList->selectedItems().first()->text();
+    }
+    emit(itemSelected(selectedItem));
+    this->accept();
+}
+
+void AddNodeDialog::unlockAdd() {
+    this->ui->addButton->setEnabled(true);
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла connectiondialog.cpp}
+
+\begin{lstlisting}
+#include "connectiondialog.h"
+#include "ui_connectiondialog.h"
+
+ConnectionDialog::ConnectionDialog(QWidget *parent) : QDialog(parent), ui(new Ui::ConnectionDialog) {
+    ui->setupUi(this);
+}
+
+ConnectionDialog::ConnectionDialog(QList<UNode *> nodes, QWidget *parent) : QDialog(parent), ui(new Ui::ConnectionDialog) {
+    ui->setupUi(this);
+
+    QVector<QString> inputs = ((ElementNode *)nodes.last())->getPlugin()->getInputs();
+    QVector<QString> outputs = ((ElementNode *)nodes.first())->getPlugin()->getOutputs();
+    uint i = 0;
+    for(QVector<QString>::Iterator inputName = inputs.begin(); inputName < inputs.end(); inputName++) {
+        QString inputText = (*inputName).replace("%INC%", QString::number(++i));
+        new QListWidgetItem(inputText, this->ui->inList);
+    }
+    i = 0;
+    for(QVector<QString>::Iterator outputName = outputs.begin(); outputName < outputs.end(); outputName++) {
+        QString outputText = (*outputName).replace("%OUTC%", QString::number(++i));
+        new QListWidgetItem(outputText, this->ui->outList);
+    }
+
+    this->selectedInput  = -1;
+    this->selectedOutput = -1;
+
+    connect(this->ui->cancelButton, SIGNAL(clicked()),              this, SLOT(reject()));
+    connect(this->ui->okButton,     SIGNAL(clicked()),              this, SLOT(accept()));
+    connect(this->ui->inList,       SIGNAL(itemPressed(QListWidgetItem *)), this, SLOT(setInput(QListWidgetItem *)));
+    connect(this->ui->outList,      SIGNAL(itemPressed(QListWidgetItem *)), this, SLOT(setOutput(QListWidgetItem *)));
+}
+
+ConnectionDialog::~ConnectionDialog() {
+    delete ui;
+}
+
+void ConnectionDialog::setCounters(uint inCounter, uint outCounter) {
+    this->inCounter  = inCounter;
+    this->outCounter = outCounter;
+}
+
+QPair<int, int> ConnectionDialog::getConnectors() {
+    return QPair<int, int>(this->selectedOutput, this->selectedInput);
+}
+
+void ConnectionDialog::setConnectors(QPair<int, int> connectors) {
+    this->selectedOutput = connectors.first;
+    this->selectedInput  = connectors.second;
+    this->ui->outList->setCurrentRow(connectors.first);
+    this->ui->inList->setCurrentRow(connectors.second);
+    this->ui->okButton->setEnabled(true);
+}
+
+void ConnectionDialog::setInput(QListWidgetItem *) {
+    QModelIndexList l = this->ui->inList->selectionModel()->selectedIndexes();
+    foreach(QModelIndex i, l) {
+        this->selectedInput = i.row();
+    }
+    if ((selectedInput != -1) && (selectedOutput != -1)) {
+        this->ui->okButton->setEnabled(true);
+    }
+}
+
+void ConnectionDialog::setOutput(QListWidgetItem *) {
+    QModelIndexList l = this->ui->outList->selectionModel()->selectedIndexes();
+    foreach(QModelIndex i, l) {
+        this->selectedOutput = i.row();
+    }
+    if ((selectedInput != -1) && (selectedOutput != -1)) {
+        this->ui->okButton->setEnabled(true);
+    }
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла document.cpp}
+
+\begin{lstlisting}
+#include "document.h"
+
+/* main constructor */
+Document::Document(QMdiSubWindow *parent) {
+    this->parent = parent;
+    this->setObjectName("document");
+
+    // scroll area inside of subwindow
+    this->container = new QScrollArea(this->parent);
+
+    // finally, workarea
+    this->workarea = new QFrame(this->container);
+    this->workarea->setObjectName("document_area");
+    this->workarea->setFrameStyle(QFrame::StyledPanel);
+
+    this->container->setWidget(workarea);
+
+    if (parent) this->parent->setWidget(this->container);
+
+    this->title         = "";
+    this->changed       = false;
+    this->mode          = DocumentMode::Default;
+    this->nodeCounter   = 0;
+    this->activeElement = 0;
+
+    this->xml = new QDomDocument("SVE");
+    this->xml->appendChild(this->xml->createElement("document"));
+
+    this->pushToHistory();
+}
+
+/* resize workarea */
+void Document::resize(const int w, const int h) {
+    this->workarea->resize(w, h);
+}
+
+/* resize workarea */
+void Document::resize(const QSize size) {
+    this->workarea->resize(size);
+    this->xml->firstChild().toElement().setAttribute("width",  size.width());
+    this->xml->firstChild().toElement().setAttribute("height", size.height());
+}
+
+/* embed into DocWindow */
+void Document::attachToWindow(QMdiSubWindow *parent) {
+    this->parent = parent;
+    this->container->setParent(this->parent);
+    this->parent->setWidget(this->container);
+}
+
+/* get size of workarea */
+QSize Document::getSize() {
+    return this->workarea->size();
+}
+
+/* check if document tree was changed */
+bool Document::isChanged() {
+    return this->changed;
+}
+
+/* add label to the document and xml tree */
+void Document::addLabel(const QString text, bool skipHistory) {
+    if (!skipHistory) {
+        this->pushToHistory();
+    }
+    LabelNode *label = new LabelNode(text, this->xml, this->workarea);
+    connect(label, SIGNAL(altered(AlterType)), this, SLOT(handleChildSignals(AlterType)));
+    this->setChanged(true);
+}
+
+/* add label from xml node */
+void Document::addLabel(const QDomNode node, bool skipHistory) {
+    if (!skipHistory) {
+        this->pushToHistory();
+    }
+    LabelNode *label = new LabelNode(node, this->xml, this->workarea);
+    connect(label, SIGNAL(altered(AlterType)), this, SLOT(handleChildSignals(AlterType)));
+    this->setChanged(true);
+}
+
+/* add node */
+void Document::addNode(Plugin *plugin, bool skipHistory) {
+    if (!skipHistory) {
+        this->pushToHistory();
+    }
+    ElementNode *elementNode = new ElementNode(plugin, this->xml, this->workarea);
+    connect(elementNode, SIGNAL(activated()),        this, SLOT(setActiveElement()));
+    connect(elementNode, SIGNAL(altered(AlterType)), this, SLOT(handleChildSignals(AlterType)));
+    // set changed flag
+    this->setChanged(true);
+}
+
+/* add node by xml node */
+bool Document::addNode(const QDomNode node, bool skipHistory){
+    if (!skipHistory) {
+        this->pushToHistory();
+    }
+    QString pluginName = node.toElement().attribute("plugin");
+    if (this->getPlugins().contains(pluginName)) {
+        Plugin *plugin = this->getPlugin(pluginName);
+        ElementNode *elementNode = new ElementNode(node, plugin, this->xml, this->workarea);
+        connect(elementNode, SIGNAL(activated()),        this, SLOT(setActiveElement()));
+        connect(elementNode, SIGNAL(altered(AlterType)), this, SLOT(handleChildSignals(AlterType)));
+        // set changed flag
+        this->setChanged(true);
+        return true;
+    }
+    else {
+        this->setChanged(false);
+        return false;
+    }
+}
+
+/* add node by plugin name */
+void Document::addNode(QString plugin){
+    this->addNode(this->getPlugin(plugin));
+}
+
+/* add link */
+void Document::addLink(QList<UNode*> elementNodes, QPair<int, int> connectors, bool skipHistory) {
+    if (!skipHistory) {
+        this->pushToHistory();
+    }
+    LinkNode *linkNode = new LinkNode(elementNodes, connectors, this->xml, this->workarea);
+    connect(linkNode, SIGNAL(activated()),        this, SLOT(setActiveElement()));
+    connect(linkNode, SIGNAL(altered(AlterType)), this, SLOT(handleChildSignals(AlterType)));
+    // reset document mode
+    this->setMode(DocumentMode::Default);
+    this->setChanged(true);
+}
+
+/* add link by xml node */
+void Document::addLink(const QDomNode node, bool skipHistory) {
+    if (!skipHistory) {
+        this->pushToHistory();
+    }
+
+    QList<UNode *> elementNodes;
+    elementNodes << this->getNodeByID(node.toElement().attribute("first_id"));
+    elementNodes << this->getNodeByID(node.toElement().attribute("last_id"));
+
+    LinkNode *linkNode = new LinkNode(node, elementNodes, this->xml, this->workarea);
+    connect(linkNode, SIGNAL(activated()),        this, SLOT(setActiveElement()));
+    connect(linkNode, SIGNAL(altered(AlterType)), this, SLOT(handleChildSignals(AlterType)));
+    this->setChanged(true);
+}
+
+/* get node by xml node's id */
+UNode* Document::getNodeByID(QString id) {
+    QString type;
+    foreach(QObject *item, this->workarea->children()) {
+        type = item->objectName();
+        if ((type == "link_node") || (type == "element_node") || (type == "label_node")) {
+            if (((UNode*) item)->attr("id") == id) {
+                return (UNode*) item;
+            }
+        }
+    }
+    return NULL;
+}
+
+/* undo last action */
+void Document::undo(){
+    if(!this->history.empty()) {
+        QByteArray state = this->history.pop();
+        this->xml->setContent(state);
+        this->renderNodes();
+    };
+}
+
+/* save document to file */
+bool Document::save(QString filename) {
+
+    this->filename = filename;
+    this->title = QFileInfo(filename).baseName() + ".sve";
+    QFile fileOut(this->filename);
+    fileOut.open(QFile::WriteOnly);
+    bool res = (fileOut.write(this->xml->toString().toUtf8()) > 0);
+    fileOut.close();
+    if (res) {
+        this->setChanged(false);
+    }
+    return res;
+}
+
+/* load from file */
+bool Document::load(QString filename) {
+    this->filename = filename;
+    this->title = QFileInfo(filename).baseName() + ".sve";
+    QFile fileIn(this->filename);
+    fileIn.open(QFile::ReadOnly);
+    QString file = fileIn.readAll();
+    QString erm;
+    int l, c;
+    if (!this->xml->setContent(file, &erm, &l, &c)) {
+        qDebug() << erm << ':' << l << '-' << c;
+        return false;
+    }
+    fileIn.close();
+
+    this->setChanged(false);
+    this->history.clear();
+    this->pushToHistory();
+
+    return true;
+}
+
+/* set document changed flag */
+void Document::setChanged(bool changed) {
+    this->changed = changed;
+}
+
+/* handle signals from child elements */
+void Document::handleChildSignals(AlterType type) {
+    if (type != AlterType::None) {
+        this->pushToHistory();
+        this->setChanged(true);
+        emit altered(true);
+    }
+    // redraw links if element was moved
+    if ((type == AlterType::Moved) && (this->sender()->objectName() == "element_node")) {
+        foreach(QObject *item, this->workarea->children()) {
+            if ((item->objectName() == "link_node") && ((LinkNode*)item)->hasNode(((UNode*)this->sender())->getID())) {
+                ((UNode*)item)->repaint();
+            }
+        }
+    }
+    // delete links if element was deleted
+    if ((type == AlterType::Deleted) && (this->sender()->objectName() == "element_node")) {
+        foreach(QObject *item, this->workarea->children()) {
+            if ((item->objectName() == "link_node") && ((LinkNode*)item)->hasNode(((UNode*)this->sender())->getID())) {
+                ((UNode*)item)->remove();
+            }
+        }
+    }
+}
+
+/* set last clicked element for all kinds of stuff */
+void Document::setActiveElement() {
+    if (this->mode == DocumentMode::SelectNode && this->nodeCounter < 2) {
+        this->nodeCounter++;
+        this->activeElement = (UNode*)this->sender();
+        emit(elementActivated(this->activeElement, this->nodeCounter));
+    }
+}
+
+/* reset active element */
+void Document::resetActiveElement() {
+    this->activeElement = 0;
+}
+
+/* save xml tree to history */
+void Document::pushToHistory() {
+    QByteArray state = this->xml->toByteArray();
+    this->history.push(state);
+}
+
+/* get screenshot of workarea */
+QPixmap Document::getImage() {
+    QPixmap img(this->workarea->size());
+    this->workarea->render(&img);
+    return img;
+}
+
+/* TODO: very raw extremely not optimized code */
+/* This would be pretty nice to rewrite it     */
+QString Document::getVHDL() {
+    QString vhdl = "-- SVE direct export\n\n";
+    QStringList usedPlugins = this->getUsedPlugins();
+
+    QString portTemplate  = "\t%1 : %2 BIT";
+    // %1 - name
+    // %2 - type (in/out)
+
+    QString entityTemplate = "entity %1 is\n"
+    "port (\n"
+    "%2"
+    "%3"
+    ");\n"
+    "end entity %1;\n\n";
+    // %1 - name
+    // %2 - inputs
+    // %3 - outputs
+
+    QString functionalTemplate = "architecture functional of %1 is\n"
+    "begin\n"
+    "%2\n"
+    "end architecture functional;\n\n";
+    // %1 - name
+    // %2 - source
+
+    QString componentTemplate = "component %1 is\n"
+    "port (\n"
+    "%2"
+    "%3"
+    ");\n"
+    "end component %1;\n\n";
+    // %1 - name
+    // %2 - inputs
+    // %3 - outputs
+
+    QString structureTemplate = "architecture structure of sve is\n"
+    "%1"
+    "%2\n"
+    "begin\n"
+    "%3"
+    "end architecture structure;";
+    // %1 - components
+    // %2 - signals
+    // %3 - source
+
+    QString portMapTemplate = "\tSVENODE%1 : %2 port map (%3, %4);\n";
+    // %1 - number
+    // %2 - component
+    // %3 - inputs
+    // %4 - outputs
+
+    QStringList components;
+
+    /* Enities of the system */
+    foreach(QString name, usedPlugins) {
+        if (name == "port_in" || name == "port_out") {
+            continue;
+        }
+        Plugin *plugin = this->getPlugin(name);
+        QVector<QString> pInputs = plugin->getInputs();
+        QVector<QString> pOutputs = plugin->getOutputs();
+        QString inputs, outputs, source;
+        source = plugin->getSource();
+        int summary = pInputs.size() + pOutputs.size();
+        for (int i = 0; i < pInputs.size(); i++) {
+            pInputs[i] = pInputs[i].replace("%INC%", QString::number(i + 1));
+            inputs    += portTemplate.arg(pInputs[i], "in");
+            if (i != summary) {
+                inputs += ";\n";
+            }
+            source     = source.replace("%IN_" + QString::number(i + 1) + "%", pInputs[i]);
+        }
+        for (int i = 0; i < pOutputs.size(); i++) {
+            pOutputs[i] = pOutputs[i].replace("%OUTC%", QString::number(i + 1));
+            outputs    += portTemplate.arg(pOutputs[i], "out");
+            if (i != pOutputs.size() - 1) {
+                outputs += ";\n";
+            }
+            source      = source.replace("%OUT_" + QString::number(i + 1) + "%", pOutputs[i]);
+        }
+        // describe entities
+        vhdl += entityTemplate.arg(name, inputs, outputs) + functionalTemplate.arg(name, source);
+        // add components for system
+        components << componentTemplate.arg(name, inputs, outputs);
+    }
+
+    /* Main entity */
+    vhdl += "-- SVE entity\n";
+    QMap<QString, QPair<QDomElement, int> > sInputs, sOutputs;
+    QString inputs, outputs;
+    QDomNodeList nodes = this->xml->elementsByTagName("node");
+    int ns = nodes.size();
+    int ic = 0;
+    int oc = 0;
+    for(int i = 0; i < ns; i++) {
+        QDomElement element = nodes.at(i).toElement();
+        QString usedPlugin = element.attribute("plugin");
+        if (usedPlugin == "port_in") {
+            sInputs[element.attribute("id")] = {element, ++ic};
+        }
+        if (usedPlugin == "port_out") {
+            sOutputs[element.attribute("id")] = {element, ++oc};
+        }
+    }
+    int summary = sInputs.size() + sOutputs.size();
+    for(int i = 0; i < sInputs.size(); i++) {
+        inputs += portTemplate.arg("SVEIN" + QString::number(i + 1), "in");
+        if (i != summary) {
+            inputs += ";\n";
+        }
+    }
+    for(int i = 0; i < sOutputs.size(); i++) {
+        outputs += portTemplate.arg("SVEOUT" + QString::number(i + 1), "out");
+        if (i != sOutputs.size() - 1) {
+            outputs += ";\n";
+        }
+    }
+    vhdl += entityTemplate.arg("sve", inputs, outputs);
+
+    // signals to inputs and outputs
+    QDomNodeList elinks = this->xml->elementsByTagName("link");
+    QMap<QString, QPair<QDomElement, int> > links;
+    QStringList sSignals;
+    QString source = "";
+    for(int i = 0; i < elinks.size(); i++) {
+        // put signal
+        sSignals << "signal SVESIG" + QString::number(i + 1) + ": BIT;\n";
+        QDomElement link = elinks.at(i).toElement();
+        // append links
+        links[link.attribute("id")] = {link, i + 1};
+        QString fId = link.attribute("first_id");
+        QString lId = link.attribute("last_id");
+        // outer ports
+        if (sInputs.contains(fId)) {
+            source += QString("\tSVESIG%1 <= SVEIN%2;\n").arg(QString::number(i + 1), QString::number(sInputs[fId].second));
+        }
+        else if (sOutputs.contains(lId)) {
+            source += QString("\tSVEOUT%2 <= SVESIG%1;\n").arg(QString::number(i + 1), QString::number(sOutputs[lId].second));
+        }
+    }
+    // signals with same output
+    for(int i = 0; i < elinks.size(); i++) {
+        QDomElement link1 = elinks.at(i).toElement();
+        QString fId1 = link1.attribute("first_id");
+        QString cId1 = link1.attribute("first_connector");
+        for(int j = i + 1; j < elinks.size(); j++) {
+            QDomElement link2 = elinks.at(j).toElement();
+            QString fId2 = link2.attribute("first_id");
+            QString cId2 = link2.attribute("first_connector");
+            if (fId1 == fId2 && cId1 == cId2) {
+                source += QString("\tSVESIG%1 <= SVESIG%2;\n").arg(QString::number(j + 1), QString::number(i + 1));
+            }
+        }
+    }
+    // nodes
+    for (int i = 0; i < ns; i++) {
+        QDomElement node = nodes.at(i).toElement();
+        QString usedPlugin = node.attribute("plugin");
+        int maxInputs  = this->getPlugin(usedPlugin)->getInputs().size();
+        int maxOutputs = this->getPlugin(usedPlugin)->getOutputs().size();
+        if (usedPlugin != "port_in" && usedPlugin != "port_out") {
+            QStringList inputs, outputs;
+            for (int j = 0; j < links.values().size(); j++) {
+                QPair<QDomElement, int> link = links.values().at(j);
+                if (link.first.attribute("last_id") == node.attribute("id") && inputs.size() < maxInputs) {
+                    // put signal accordingly to connector
+                    inputs.insert(link.first.attribute("last_connector").toInt(), "SVESIG" + QString::number(link.second));
+                }
+                if (link.first.attribute("first_id") == node.attribute("id") && outputs.size() < maxOutputs) {
+                    outputs.insert(link.first.attribute("first_connector").toInt(), "SVESIG" + QString::number(link.second));
+                }
+            }
+            source += portMapTemplate.arg(QString::number(i + 1), usedPlugin, inputs.join(", "), outputs.join(", "));
+        }
+    }
+
+    vhdl += structureTemplate.arg(components.join(""), sSignals.join(""), source);
+
+    return vhdl;
+}
+
+/* return document's xml */
+QDomDocument *Document::getXml() {
+    return this->xml;
+}
+
+/* create widgets from xml tree */
+bool Document::renderNodes() {
+    // remove children
+    QObjectList children = this->workarea->children();
+    foreach(QObject* child, children) {
+        delete child;
+    }
+    // append children
+    QDomNodeList labels = this->xml->elementsByTagName("label");
+    int l = labels.size();
+    for (int i = 0; i < l; i++) {
+        this->addLabel(labels.at(i), true);
+    }
+    QDomNodeList nodes = this->xml->elementsByTagName("node");
+    l = nodes.size();
+    for (int i = 0; i < l; i++) {
+        if (!this->addNode(nodes.at(i), true)) {
+            return false;
+        }
+    }
+    QDomNodeList links = this->xml->elementsByTagName("link");
+    l = links.size();
+    for (int i = 0; i < l; i++) {
+        this->addLink(links.at(i), true);
+    }
+    return true;
+}
+
+/* get plugin by its name */
+Plugin* Document::getPlugin(QString name) {
+    foreach(Plugin *p, this->plugins) {
+        if (p->getName() == name) {
+            return p;
+        }
+    }
+    return 0;
+}
+
+/* get list of plugins */
+QStringList Document::getPlugins() {
+    QStringList ps;
+    foreach(Plugin *p, this->plugins) {
+        ps << p->getName();
+    }
+    return ps;
+}
+
+QStringList Document::getUsedPlugins() {
+    QDomNodeList nodes = this->xml->elementsByTagName("node");
+    int l = nodes.size();
+    QStringList usedPlugins;
+    for (int i = 0; i < l; i++) {
+        QString usedPlugin = nodes.at(i).toElement().attribute("plugin");
+        if (!usedPlugins.contains(usedPlugin)) {
+            usedPlugins << usedPlugin;
+        }
+    }
+    return usedPlugins;
+}
+
+/* set plugins */
+void Document::setPlugins(QList<Plugin *> plugins) {
+    this->plugins = plugins;
+}
+
+/* set document mode */
+void Document::setMode(DocumentMode documentMode) {
+    this->mode = documentMode;
+    switch(documentMode) {
+    case DocumentMode::Default:
+        this->nodeCounter = 0;
+        break;
+    default:
+        break;
+    }
+}
+
+/* set node counter */
+void Document::setNodeCounter(uint counter) {
+    this->nodeCounter = counter;
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла documentoptionsdialog.cpp}
+
+\begin{lstlisting}
+#include "documentoptionsdialog.h"
+#include "ui_documentoptionsdialog.h"
+
+DocumentOptionsDialog::DocumentOptionsDialog(QWidget *parent) : QDialog(parent), ui(new Ui::DocumentOptionsDialog) {
+    ui->setupUi(this);
+
+    connect(this->ui->okButton,     SIGNAL(clicked()), this, SLOT(accept()));
+    connect(this->ui->cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
+}
+
+DocumentOptionsDialog::~DocumentOptionsDialog() {
+    delete ui;
+}
+
+void DocumentOptionsDialog::setDimensions(QSize size) {
+    this->ui->heightSpinner->setValue(size.height());
+    this->ui->widthSpinner->setValue(size.width());
+}
+
+QSize DocumentOptionsDialog::getDimensions() {
+    return QSize(this->ui->widthSpinner->value(), this->ui->heightSpinner->value());
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла docwindow.cpp}
+
+\begin{lstlisting}
+#include "docwindow.h"
+
+
+DocWindow::DocWindow(QWidget *parent) : QMdiSubWindow(parent) {
+    int n = ((QMdiArea*) parent)->subWindowList().count() + 1;
+    this->setWindowTitle(QObject::tr("Untitled") + " " + QString::number(n));
+    this->showMaximized();
+    this->setAttribute(Qt::WA_DeleteOnClose);
+    this->setObjectName("document_window");
+
+    document = new Document(this);
+    // to set window title
+    connect(document, SIGNAL(altered(bool)), this, SLOT(setChanged(bool)));
+}
+
+void DocWindow::setTitle(const QString title) {
+    this->setWindowTitle(title);
+}
+
+Document* DocWindow::getDocument() {
+    return this->document;
+}
+
+void DocWindow::closeEvent(QCloseEvent *closeEvent) {
+    if (this->document->isChanged()) {
+        QMessageBox* mb = new QMessageBox();
+        mb->setWindowTitle(tr("Document was changed"));
+        mb->setText(tr("Document \"%1\" has some unsaved changes").arg(this->windowTitle()));
+        mb->addButton(tr("Close without saving"), QMessageBox::DestructiveRole);
+        mb->addButton(tr("Save"), QMessageBox::AcceptRole);
+        mb->addButton(tr("Cancel"), QMessageBox::RejectRole);
+        switch (mb->exec()) {
+        // close without saving
+        case 0:
+            closeEvent->accept();
+            break;
+        // save
+        case 1:
+            this->save();
+            closeEvent->accept();
+            break;
+        // cancel
+        case 2:
+            closeEvent->ignore();
+            break;
+        }
+    }
+    else {
+        closeEvent->accept();
+    }
+}
+
+void DocWindow::save() {
+    QString filename;
+    if (this->document->filename == "") {
+        QFileDialog *fd = new QFileDialog();
+        fd->setDefaultSuffix(".sve");
+        filename = fd->getSaveFileName(0, tr("Save as..."), "", "*.sve");
+        // saving cancelled
+        if (filename == "") return;
+        // setDefaultSuffix isn't working properly under Linux
+        if (!filename.endsWith(".sve")) filename += ".sve";
+    }
+    else {
+        filename = this->document->filename;
+    }
+    if (this->document->save(filename)) {
+        this->setTitle(this->document->title);
+        this->setStatus(tr("Document saved"), 2000);
+    }
+    else {
+        this->setStatus(tr("Error saving document"), -1);
+    }
+}
+
+void DocWindow::saveAs() {
+    QString backupFilename = this->document->filename;
+    this->document->filename = "";
+    this->save();
+    if (this->document->filename == "") {
+        this->document->filename = backupFilename;
+    }
+}
+
+bool DocWindow::load() {
+    QFileDialog *fd = new QFileDialog();
+    fd->setDefaultSuffix(".sve");
+    QString filename = fd->getOpenFileName(0, tr("Open file..."), "", "*.sve");
+    // saving cancelled
+    if (filename == "") {
+        return false;
+    }
+    // loading non-sve
+    if (this->document->load(filename)) {
+        this->setTitle(this->document->title);
+        if (this->renderNodes()) {
+            this->document->setChanged(false);
+            this->setStatus(tr("Document loaded"), 2000);
+            return true;
+        }
+        // no required plugin
+        else {
+            this->setStatus(tr("Document loading error: no required plugin"), -1);
+        }
+    }
+    else {
+        this->setStatus(tr("Document loading error: wrong format"), -1);
+    }
+    return false;
+
+}
+
+void DocWindow::setLinkNode(UNode *node, uint nodeCounter) {
+    ConnectionDialog *cd;
+    this->linkNodes << node;
+    switch(nodeCounter) {
+    case 1:
+        this->setStatus(tr("Set ending node"), 0);
+        break;
+    case 2:
+        // clear
+        this->document->setMode(DocumentMode::Default);
+        this->setStatus("", 0);
+        // show slot selector
+        cd = new ConnectionDialog(this->linkNodes);
+        if (cd->exec() == QDialog::Accepted) {
+            // output, input
+            QPair<int, int> connectors = cd->getConnectors();
+            this->document->addLink(this->linkNodes, connectors);
+        }
+        this->linkNodes.clear();
+        delete cd;
+        break;
+    }
+}
+
+void DocWindow::showOptionsDialog() {
+    DocumentOptionsDialog *dod = new DocumentOptionsDialog();
+    dod->setDimensions(this->document->getSize());
+    if (dod->exec() == QDialog::Accepted) {
+        this->document->resize(dod->getDimensions());
+        this->setChanged(true);
+    }
+    delete dod;
+}
+
+void DocWindow::showSaveImageDialog() {
+    QFileDialog *fd = new QFileDialog();
+    fd->setDefaultSuffix(".png");
+    QString filename = fd->getSaveFileName(0, tr("Save as..."), "", "*.png");
+    // saving cancelled
+    if (filename == "") return;
+    // setDefaultSuffix isn't working properly under Linux
+    if (!filename.endsWith(".sve")) filename += ".png";
+    QPixmap img = this->document->getImage();
+    img.save(filename, 0, -1);
+}
+
+void DocWindow::viewVHDL() {
+    QString vhdl = this->document->getVHDL();
+    SourceViewDialog *svd = new SourceViewDialog(vhdl);
+    svd->setSource(vhdl.replace("\n", "<br>\n"));
+    svd->exec();
+}
+
+void DocWindow::addLabel() {
+    bool ok;
+    QString text = QInputDialog::getText(0,
+        tr("New label"),
+        tr("Insert text for this label"),
+        QLineEdit::Normal,
+        "",
+        &ok
+    );
+    if (ok && !text.isEmpty()) {
+        this->document->addLabel(text);
+        this->setChanged(true);
+    }
+}
+
+void DocWindow::addNode() {
+    AddNodeDialog *ad = new AddNodeDialog(this->document->getPlugins());
+    connect(ad, SIGNAL(itemSelected(QString)), this->document, SLOT(addNode(QString)));
+    ad->exec();
+    this->setChanged(this->document->isChanged());
+}
+
+void DocWindow::addLink() {
+    this->setStatus(tr("Set beginning node"), 0);
+    this->document->setMode(DocumentMode::SelectNode);
+    // futher opertations take place in setLinkNode
+    connect(this->document, SIGNAL(elementActivated(UNode*, uint)), this, SLOT(setLinkNode(UNode*, uint)), Qt::UniqueConnection);
+}
+
+void DocWindow::addNode(Plugin *plugin) {
+    this->document->addNode(plugin);
+    this->setChanged(true);
+}
+
+void DocWindow::attachStatusBar(QStatusBar *statusBar) {
+    this->statusBar = statusBar;
+}
+
+void DocWindow::setChanged(bool changed) {
+    this->document->setChanged(changed);
+    if (changed && !this->windowTitle().endsWith("*")) {
+        this->setWindowTitle(this->windowTitle() + "*");
+    }
+}
+
+bool DocWindow::renderNodes() {
+    return this->document->renderNodes();
+}
+
+void DocWindow::setStatus(QString text, int timeout = 0) {
+    this->statusBar->showMessage(text, timeout);
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла elementnode.cpp}
+
+\begin{lstlisting}
+#include "elementnode.h"
+
+ElementNode::ElementNode(QWidget *parent) : UNode(parent) {
+    // stub
+}
+
+ElementNode::ElementNode(Plugin *plugin, QDomDocument *xml, QWidget *parent) : UNode(parent) {
+    this->setObjectName("element_node");
+    this->settings = new QSettings("mike-schekotov", "sve");
+
+    connect(this, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(showContextMenu(const QPoint&)));
+
+    this->xml = xml;
+    this->plugin = plugin;
+
+    this->node = this->xml->createElement("node");
+    // set attributes
+    this->node.setAttribute("id", QString::number(QDateTime::currentMSecsSinceEpoch()));
+    this->node.setAttribute("x", 0);
+    this->node.setAttribute("y", 0);
+    this->node.setAttribute("plugin", plugin->getName());
+    // append to root node
+    this->xml->firstChild().appendChild(this->node);
+
+    QSize pixmapSize = this->settings->value("default_doc/node_size").toSize();
+    this->setPixmap(plugin->getPixmap(pixmapSize));
+    this->show();
+
+}
+
+ElementNode::ElementNode(const QDomNode node, Plugin *plugin, QDomDocument *xml, QWidget *parent) : UNode(parent) {
+    this->setObjectName("element_node");
+    this->settings = new QSettings("mike-schekotov", "sve");
+
+    connect(this, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(showContextMenu(const QPoint&)));
+
+    this->xml = xml;
+    this->node = node.toElement();
+    this->plugin = plugin;
+
+    QSize pixmapSize = this->settings->value("default_doc/node_size").toSize();
+    this->setPixmap(plugin->getPixmap(pixmapSize));
+
+    this->show();
+    // move
+    this->setPosition(this->attr("x").toInt(), this->attr("y").toInt());
+}
+
+Plugin *ElementNode::getPlugin() {
+    return this->plugin;
+}
+
+QString ElementNode::getName() {
+    return this->plugin->getName();
+}
+
+void ElementNode::showContextMenu(const QPoint &pos) {
+    QPoint globalPos = this->mapToGlobal(pos);
+    QMenu menu;
+    QAction *edit = new QAction(tr("Edit properties"), this);
+            connect(edit, SIGNAL(triggered()), this, SLOT(edit()));
+            menu.addAction(edit);
+    QAction *del = new QAction(tr("Delete"), this);
+            connect(del, SIGNAL(triggered()), this, SLOT(remove()));
+            menu.addAction(del);
+            menu.exec(globalPos);
+}
+
+void ElementNode::edit() {
+    NodePropertiesDialog *np = new NodePropertiesDialog();
+    np->setInputs(this->plugin->getInputs());
+    np->setOutputs(this->plugin->getOutputs());
+    np->setSource(this->plugin->getSource());
+    np->show();
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла labelnode.cpp}
+
+\begin{lstlisting}
+#include "labelnode.h"
+
+LabelNode::LabelNode(QWidget *parent) : UNode(parent) {
+    // stub
+}
+
+LabelNode::LabelNode(const QString text, QDomDocument *xml, QWidget *parent) : UNode(text, parent) {
+    this->setObjectName("label_node");
+    connect(this, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(showContextMenu(const QPoint&)));
+    this->xml = xml;
+    // create via domdocument call
+    this->node = xml->createElement("label");
+    // set attributes
+    this->node.setAttribute("id", QString::number(QDateTime::currentMSecsSinceEpoch()));
+    this->node.setAttribute("x", 0);
+    this->node.setAttribute("y", 0);
+    this->node.setAttribute("text", text);
+    // append to root node
+    xml->firstChild().appendChild(this->node);
+    this->show();
+    this->startPos = QPoint(0, 0);
+}
+
+LabelNode::LabelNode(const QDomNode node, QDomDocument *xml, QWidget *parent) : UNode(node.toElement().attribute("text"), parent) {
+    this->setObjectName("label_node");
+    connect(this, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(showContextMenu(const QPoint&)));
+    this->xml  = xml;
+    this->node = node.toElement();
+    this->show();
+    // move
+    this->setPosition(this->attr("x").toInt(), this->attr("y").toInt());
+}
+
+void LabelNode::showContextMenu(const QPoint& pos) {
+    QPoint globalPos = this->mapToGlobal(pos);
+    QMenu menu;
+    QAction *edit = new QAction(tr("Edit text"), this);
+            connect(edit, SIGNAL(triggered()), this, SLOT(edit()));
+            menu.addAction(edit);
+    QAction *del = new QAction(tr("Delete"), this);
+            connect(del, SIGNAL(triggered()), this, SLOT(remove()));
+            menu.addAction(del);
+    menu.exec(globalPos);
+}
+
+void LabelNode::edit() {
+    bool ok;
+    QString text = QInputDialog::getText(this,
+        tr("New label"),
+        tr("Insert text for this label"),
+        QLineEdit::Normal,
+        this->text(),
+        &ok
+    );
+    if (ok && !text.isEmpty()) {
+        this->setText(text);
+        this->adjustSize();
+        this->node.setAttribute("text", text);
+        // document changed flag
+        emit altered(AlterType::Edited);
+    }
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла linknode.cpp}
+
+\begin{lstlisting}
+#include "linknode.h"
+
+LinkNode::LinkNode(QList<UNode*> elementNodes, QPair<int, int> connectors, QDomDocument *xml, QWidget *parent) : UNode(parent) {
+    this->setObjectName("link_node");
+    connect(this, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(showContextMenu(const QPoint&)), Qt::UniqueConnection);
+
+    this->settings   = new QSettings("mike-schekotov", "sve");
+
+    this->nodes      = elementNodes;
+    this->connectors = connectors;
+
+    this->xml = xml;
+    this->node = this->xml->createElement("link");
+    this->setNodeAttribute("id",              QString::number(QDateTime::currentMSecsSinceEpoch()));
+    this->setNodeAttribute("first_id",        elementNodes.first()->attr("id"));
+    this->setNodeAttribute("last_id",         elementNodes.last()->attr("id"));
+    this->setNodeAttribute("first_connector", connectors.first);
+    this->setNodeAttribute("last_connector",  connectors.second);
+    this->xml->firstChild().appendChild(this->node);
+
+    this->painter = new QPainter();
+    this->pen = QPen(Qt::black, 1, Qt::SolidLine);
+
+    this->show();
+}
+
+LinkNode::LinkNode(const QDomNode node, QList<UNode *> elementNodes, QDomDocument *xml, QWidget *parent): UNode(parent) {
+    this->setObjectName("link_node");
+    connect(this, SIGNAL(customContextMenuRequested(const QPoint&)), this, SLOT(showContextMenu(const QPoint&)), Qt::UniqueConnection);
+
+    this->settings   = new QSettings("mike-schekotov", "sve");
+
+    this->xml        = xml;
+    this->node       = node.toElement();
+    this->nodes      = elementNodes;
+    this->connectors = {this->attr("first_connector").toInt(), this->attr("last_connector").toInt()};
+
+    this->painter = new QPainter();
+    this->pen = QPen(Qt::black, 1, Qt::SolidLine);
+
+    this->show();
+}
+
+bool LinkNode::hasNode(QString nodeID) {
+    return (this->nodes.first()->attr("id") == nodeID || this->nodes.last()->attr("id") == nodeID);
+}
+
+void LinkNode::paintEvent(QPaintEvent *) {
+    QSize nodeSize         = this->settings->value("default_doc/node_size").toSize();
+    ElementNode *firstNode = (ElementNode*) this->nodes.first();
+    ElementNode *lastNode  = (ElementNode*) this->nodes.last();
+
+    int nOuts  = ((ElementNode*) firstNode)->getPlugin()->getOutputs().size();
+    int nIns   = ((ElementNode*) lastNode)->getPlugin()->getInputs().size();
+
+    // geometry tricks
+    int xFirst = firstNode->attr("x").toInt();
+    int xLast  = lastNode->attr("x").toInt();
+
+    int yFirst = firstNode->attr("y").toInt();
+    int yLast  = lastNode->attr("y").toInt();
+
+    int marginFirst = (this->connectors.first  + 1) * nodeSize.height() / (nOuts + 1);
+    int marginLast  = (this->connectors.second + 1) * nodeSize.height() / (nIns  + 1);
+
+    QPoint topLeft(
+        std::min(xFirst + nodeSize.width(), xLast),
+        std::min(yFirst + marginFirst,      yLast  + marginLast)
+    );
+    QPoint bottomRight(
+        std::max(xFirst + nodeSize.width(), xLast),
+        std::max(yFirst + marginFirst,      yLast  + marginLast)
+    );
+
+    QPoint p1(firstNode->pos().x() - topLeft.x() + nodeSize.width(), firstNode->pos().y() - topLeft.y() + marginFirst);
+    QPoint p2(lastNode->pos().x()  - topLeft.x()                   , lastNode->pos().y()  - topLeft.y() + marginLast);
+
+    line.clear();
+
+    // shape of line
+    bool lineType = (p1.x() < p2.x());
+    if (lineType) {
+        this->setGeometry(topLeft.x(), topLeft.y() - 1, bottomRight.x() - topLeft.x(), bottomRight.y() - topLeft.y() + 3);
+        int fix = (p1.y() == 0) ? 1 : -1;
+        line << QPoint(p1.x(),            p1.y() + fix)
+             << QPoint(this->width() / 2, p1.y() + fix)
+             << QPoint(this->width() / 2, abs(p2.y() - fix))
+             << QPoint(p2.x(),            abs(p2.y() - fix));
+    }
+    else {
+        this->setGeometry(topLeft.x()-11, topLeft.y()-1, bottomRight.x() - topLeft.x() + 21, bottomRight.y() - topLeft.y() + 1);
+        int fixY = (p1.y() == 0) ? 1 : -1;
+        int fixX = (p1.x() == 0) ? 1 : -1;
+        line << QPoint(p1.x() + 10,        p1.y() + fixY)
+             << QPoint(p1.x() + 20 + fixX, p1.y() + fixY)
+             << QPoint(p1.x() + 20 + fixX, this->height() / 2)
+             << QPoint(p2.x() - fixX,      this->height() / 2)
+             << QPoint(p2.x() - fixX,      p2.y() - fixY)
+             << QPoint(p2.x() + 10,        p2.y() - fixY);
+    }
+
+    // mask to crop the widget
+    QRegion mask;
+    for (int i = 0; i < line.size() - 1; i++) {
+        QPoint xy1 = line[i];
+        QPoint xy2 = line[i+1];
+        if (xy1.y() == xy2.y()) {
+            xy1.setY(xy2.y() - 1);
+            xy2.setY(xy2.y() + 1);
+        }
+        else {
+            xy1.setX(xy1.x() - 1);
+            xy2.setX(xy2.x() + 1);
+        }
+        topLeft = QPoint(
+            std::min(xy1.x(), xy2.x()),
+            std::min(xy1.y(), xy2.y())
+        );
+        bottomRight = QPoint(
+            std::max(xy1.x(), xy2.x()),
+            std::max(xy1.y(), xy2.y())
+        );
+        mask += QRegion(QRect(topLeft, bottomRight));
+    }
+
+    this->painter->begin(this);
+    this->painter->setPen(this->pen);
+    this->painter->drawPolyline(line);
+    this->setMask(mask);
+    this->painter->end();
+}
+
+void LinkNode::mouseMoveEvent(QMouseEvent *) {
+}
+
+void LinkNode::showContextMenu(const QPoint &pos) {
+    QPoint globalPos = this->mapToGlobal(pos);
+    QMenu menu;
+    QAction *edit = new QAction(tr("Edit connectors"), this);
+            connect(edit, SIGNAL(triggered()), this, SLOT(edit()));
+            menu.addAction(edit);
+    QAction *del = new QAction(tr("Delete"), this);
+            connect(del, SIGNAL(triggered()), this, SLOT(remove()));
+            menu.addAction(del);
+            menu.exec(globalPos);
+}
+
+void LinkNode::edit() {
+    ConnectionDialog *cd = new ConnectionDialog(this->nodes);
+    cd->setConnectors(this->connectors);
+    if (cd->exec() == QDialog::Accepted) {
+        emit(altered(AlterType::Edited));
+        this->connectors = cd->getConnectors();
+        this->setNodeAttribute("first_connector", connectors.first);
+        this->setNodeAttribute("last_connector",  connectors.second);
+    }
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла main.cpp}
+
+\begin{lstlisting}
+#include <QtWidgets/QApplication>
+#include <QTextCodec>
+#include "mainwindow.h"
+#include <QSettings>
+
+int main(int argc, char *argv[])
+{
+    QSettings settings("mike-schekotov", "sve");
+    // Blank document settings
+    if (settings.value("default_doc/blank_size",  "") == "") {
+        settings.setValue("default_doc/blank_size",  QSize(980, 560));
+    }
+    if (settings.value("default_doc/node_size",  "") == "") {
+        settings.setValue("default_doc/node_size",  QSize(80, 60));
+    }
+    // Plugins
+    if (settings.value("plugins/plugin_dir", "") == "") {
+        settings.setValue("plugins/plugin_dir", "./plugins/");
+    }
+    if (settings.value("plugins/icon_size", "") == "") {
+        settings.setValue("plugins/icon_size",  QSize(32, 32));
+    }
+
+    QApplication a(argc, argv);
+
+    MainWindow w;
+    w.showMaximized();
+
+    return a.exec();
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла mainwindow.cpp}
+
+\begin{lstlisting}
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
+    /* load language */
+    QTranslator *t = new QTranslator();
+    t->load("sve_ru.qm");
+    qApp->installTranslator(t);
+
+    this->settings = new QSettings("mike-schekotov", "sve");
+    ui->setupUi(this);
+
+    /* load css */
+    QFile cssFile(":/css/ui-css");
+    cssFile.open(QFile::ReadOnly);
+    QString css = cssFile.readAll();
+    cssFile.close();
+    this->setStyleSheet(css);
+
+    /* set MDI options */
+    this->mdiArea = new QMdiArea;
+    this->mdiArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    this->mdiArea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    this->mdiArea->setViewMode(QMdiArea::TabbedView);
+    this->mdiArea->setActivationOrder(QMdiArea::ActivationHistoryOrder);
+    this->setCentralWidget(mdiArea);
+
+    /* set initial states */
+    this->activeDocument = NULL;
+    this->activeWindow   = NULL;
+
+    /* load plugins in program */
+    this->loadPlugins();
+
+    /* create blank document window */
+    this->createDocument();
+
+    /* load plugins into sidebar */
+    this->initPluginsToolbar();
+
+    connect(ui->aNew,      SIGNAL(triggered()), this, SLOT(createDocument()));
+    connect(ui->aQuit,     SIGNAL(triggered()), this, SLOT(quit()));
+    connect(ui->aOpen,     SIGNAL(triggered()), this, SLOT(load()));
+    connect(ui->aPlugins,  SIGNAL(triggered()), this, SLOT(showPluginListWindow()));
+    connect(ui->aSettings, SIGNAL(triggered()), this, SLOT(showPreferencesDialog()));
+}
+
+MainWindow::~MainWindow() {
+    delete ui;
+}
+
+// load all enabled plugins
+void MainWindow::loadPlugins() {
+    QDir pluginDir(this->settings->value("plugins/plugin_dir").toString());
+    QStringList enabledPlugins = this->settings->value("plugins/enabled").toStringList();
+    this->plugins = Plugin::loadByList(pluginDir, enabledPlugins);
+}
+
+void MainWindow::disconnectSlots() {
+    disconnect(ui->aAddLabel,    SIGNAL(triggered()), this->activeWindow, SLOT(addLabel()));
+    disconnect(ui->aAddNode,     SIGNAL(triggered()), this->activeWindow, SLOT(addNode()));
+    disconnect(ui->aAddLink,     SIGNAL(triggered()), this->activeWindow, SLOT(addLink()));
+    disconnect(ui->aSave,        SIGNAL(triggered()), this->activeWindow, SLOT(save()));
+    disconnect(ui->aSaveAs,      SIGNAL(triggered()), this->activeWindow, SLOT(saveAs()));
+    disconnect(ui->aOptions,     SIGNAL(triggered()), this->activeWindow, SLOT(showOptionsDialog()));
+    disconnect(ui->aExportImage, SIGNAL(triggered()), this->activeWindow, SLOT(showSaveImageDialog()));
+    disconnect(ui->aViewVHDL,    SIGNAL(triggered()), this->activeWindow, SLOT(viewVHDL()));
+
+    disconnect(ui->aUndo,        SIGNAL(triggered()), this->activeDocument, SLOT(undo()));
+}
+
+void MainWindow::connectSlots() {
+    connect(ui->aAddLabel,    SIGNAL(triggered()), this->activeWindow, SLOT(addLabel()));
+    connect(ui->aAddNode,     SIGNAL(triggered()), this->activeWindow, SLOT(addNode()));
+    connect(ui->aAddLink,     SIGNAL(triggered()), this->activeWindow, SLOT(addLink()));
+    connect(ui->aSave,        SIGNAL(triggered()), this->activeWindow, SLOT(save()));
+    connect(ui->aSaveAs,      SIGNAL(triggered()), this->activeWindow, SLOT(saveAs()));
+    connect(ui->aOptions,     SIGNAL(triggered()), this->activeWindow, SLOT(showOptionsDialog()));
+    connect(ui->aExportImage, SIGNAL(triggered()), this->activeWindow, SLOT(showSaveImageDialog()));
+    connect(ui->aViewVHDL,    SIGNAL(triggered()), this->activeWindow, SLOT(viewVHDL()));
+
+    connect(ui->aUndo,        SIGNAL(triggered()), this->activeDocument, SLOT(undo()));
+}
+
+// init sidebar
+void MainWindow::initPluginsToolbar() {
+    this->ui->pluginBar->clear();
+    QStringList panelPlugins = this->settings->value("plugins/on_panel").toStringList();
+    foreach(Plugin *p, this->plugins) {
+        QAction *a = new QAction(
+            p->getPixmap(this->settings->value("plugins/icon_size").toSize()),
+            p->getName(),
+            0
+        );
+        a->setObjectName(p->getName());
+        connect(a, SIGNAL(triggered()), this, SLOT(findPlugin()));
+        if (panelPlugins.contains(p->getName(), Qt::CaseInsensitive)) {
+            this->ui->pluginBar->insertAction(0, a);
+        }
+    }
+}
+
+// route sidebar click
+void MainWindow::findPlugin() {
+    QString activatedPlugin = this->sender()->objectName();
+    Plugin *p = this->activeDocument->getPlugin(activatedPlugin);
+    this->activeWindow->addNode(p);
+}
+
+void MainWindow::showPreferencesDialog() {
+    PreferencesDialog *pd = new PreferencesDialog();
+    if (pd->exec() == QDialog::Accepted) {
+        ui->statusBar->showMessage(tr("Restart required for changes to apply"), 0);
+    }
+    delete pd;
+}
+
+// close opened documents and quit
+void MainWindow::quit() {
+    this->mdiArea->closeAllSubWindows();
+    QMdiSubWindow *sb = this->mdiArea->activeSubWindow();
+    if (sb == 0) {
+        exit(0);
+    }
+    else {
+        sb->activateWindow();
+        if (sb->isHidden()) {
+            exit(0);
+        }
+    }
+}
+
+// new document
+void MainWindow::createDocument() {
+    // disconnect old slots
+    if (this->activeDocument && this->mdiArea->subWindowList().size() > 0) {
+        this->disconnectSlots();
+    }
+    // create new window
+    this->activeWindow = new DocWindow(mdiArea);
+    connect(this->activeWindow, SIGNAL(aboutToActivate()), this, SLOT(setActiveDocument()));
+    this->activeWindow->attachStatusBar(this->ui->statusBar);
+    // set context
+    this->activeDocument = this->activeWindow->getDocument();
+    this->activeDocument->setPlugins(this->plugins);
+    this->connectSlots();
+
+    // resize
+    this->activeDocument->resize(settings->value("default_doc/blank_size").toSize());
+}
+
+// switching between tabs
+void MainWindow::setActiveDocument() {
+    // disconnect old slots
+    if (this->activeDocument) {
+        this->disconnectSlots();
+    }
+    // switch context
+    this->activeWindow = ((DocWindow*) this->sender());
+    this->activeDocument = this->activeWindow->getDocument();
+    this->connectSlots();
+}
+
+void MainWindow::closeEvent(QCloseEvent *ev){
+    ev->ignore();
+    this->quit();
+}
+
+void MainWindow::load() {
+    this->createDocument();
+    if (!this->activeWindow->load()) {
+        this->activeWindow->close();
+    }
+}
+
+void MainWindow::showPluginListWindow() {
+    PluginListWindow *pw = new PluginListWindow(this);
+    if (pw->exec() == QDialog::Accepted) {
+        this->initPluginsToolbar();
+    }
+}
+
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла nodepropertiesdialog.cpp}
+
+\begin{lstlisting}
+#include "nodepropertiesdialog.h"
+#include "ui_nodepropertiesdialog.h"
+
+NodePropertiesDialog::NodePropertiesDialog(QWidget *parent) : QDialog(parent), ui(new Ui::NodePropertiesDialog) {
+    ui->setupUi(this);
+    this->setFixedSize(this->size());
+
+    connect(ui->cancelButton, SIGNAL(clicked()), SLOT(close()));
+    connect(ui->okButton, SIGNAL(clicked()), SLOT(save()));
+}
+
+NodePropertiesDialog::~NodePropertiesDialog() {
+    delete ui;
+}
+
+void NodePropertiesDialog::setSource(QString source) {
+    for (int i = 1; i <= this->inputs.size(); i++) {
+        source.replace("%IN_"  + QString::number(i) + "%", inputs[i-1]);
+    }
+    for (int i = 1; i <= this->outputs.size(); i++) {
+        source.replace("%OUT_" + QString::number(i) + "%", outputs[i-1]);
+    }
+    ui->source->setText(source);
+}
+
+void NodePropertiesDialog::setInputs(QVector<QString> inputs) {
+    int i = 0;
+    for(QVector<QString>::Iterator inputName = inputs.begin(); inputName < inputs.end(); inputName++) {
+        QString inputText = (*inputName).replace("%INC%", QString::number(++i));
+        this->inputs << inputText;
+        new QListWidgetItem(inputText, ui->inList);
+    }
+}
+
+void NodePropertiesDialog::setOutputs(QVector<QString> outputs) {
+    int i = 0;
+    for(QVector<QString>::Iterator outputName = outputs.begin(); outputName < outputs.end(); outputName++) {
+        QString outputText = (*outputName).replace("%OUTC%", QString::number(++i));
+        this->outputs << outputText;
+        new QListWidgetItem(outputText, ui->outList);
+    }
+}
+
+void NodePropertiesDialog::save() {
+    this->close();
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла plugin.cpp}
+
+\begin{lstlisting}
+#include "plugin.h"
+
+QVector<QString> Plugin::getElementAttributes(QString element, QString attribute){
+    QVector<QString> values;
+    QDomNodeList elements = this->node.elementsByTagName(element);
+    for (int i = 0; i < elements.size(); i++) {
+        values.append(elements.at(i).toElement().attribute(attribute));
+    }
+    return values;
+}
+
+Plugin::Plugin(QString filename){
+    QFile fileIn(filename);
+    fileIn.open(QFile::ReadOnly);
+    QString file = fileIn.readAll();
+    fileIn.close();
+    QString erm;
+    int l, c;
+    QDomDocument *xml = new QDomDocument();
+    if (!xml->setContent(file, &erm, &l, &c)) {
+        qDebug() << erm << ':' << l << '-' << c;
+    }
+    this->node = xml->firstChildElement("plugin");
+}
+
+Plugin::Plugin(QDir directory){
+    qDebug() << "Loading plugin from" << directory.absolutePath();
+    QString xmlPath = directory.absolutePath() + QDir::separator() + "plugin.svx";
+    QString imgPath = directory.absolutePath() + QDir::separator() + "plugin.svg";
+    // load xml
+    if (QFile::exists(xmlPath)) {
+        QFile fileIn(xmlPath);
+        fileIn.open(QFile::ReadOnly);
+        QString file = fileIn.readAll();
+        fileIn.close();
+        QString erm;
+        int l, c;
+        QDomDocument *xml = new QDomDocument();
+        if (!xml->setContent(file, &erm, &l, &c)) {
+            qDebug() << erm << ':' << l << '-' << c;
+        }
+        this->node = xml->firstChildElement("plugin");
+    }
+    else {
+        qDebug() << "Plugin not found";
+    }
+    // load pixmap
+    if (QFile::exists(imgPath)) {
+        this->pixmap = QPixmap(imgPath);
+    }
+    else {
+        qDebug() << "Pixmap not found";
+    }
+}
+
+Plugin::Plugin(QDomElement node){
+    this->node = node;
+}
+
+bool Plugin::isValid() {
+    return !(this->node.isNull() || this->pixmap.isNull());
+}
+
+QString Plugin::getName() {
+    return this->node.attribute("name");
+}
+
+QString Plugin::getAuthor() {
+    return this->getElementAttributes("info", "author").first();
+}
+
+QString Plugin::getDescription() {
+    return this->getElementAttributes("info", "description").first();
+}
+
+QVector<QString> Plugin::getInputs(){
+    return this->getElementAttributes("in", "name");
+}
+
+QVector<QString> Plugin::getOutputs(){
+    return this->getElementAttributes("out", "name");
+}
+
+QString Plugin::getSource(){
+    return this->node.firstChildElement("src").text();
+}
+
+QPixmap Plugin::getPixmap(QSize size){
+    return this->pixmap.scaled(size, Qt::KeepAspectRatio, Qt::SmoothTransformation);
+}
+
+QDomElement Plugin::getNode() {
+    return this->node;
+}
+
+QList<Plugin *> Plugin::loadByList(QDir pluginsDir, QStringList filterPlugins) {
+    QList<Plugin *> plugins;
+    QStringList pluginList = pluginsDir.entryList(QDir::NoDotAndDotDot | QDir::Dirs, QDir::Name);
+
+    foreach(QString p, pluginList) {
+        // change to plugin directory
+        pluginsDir.cd(p);
+        Plugin *plugin = new Plugin(pluginsDir);
+        if (filterPlugins.contains(plugin->getName(), Qt::CaseInsensitive)) {
+            if (plugin->isValid()) {
+                plugins.append(plugin);
+            }
+            else {
+                qDebug() << "Plugin" << plugin->getName() << "seems broken";
+            }
+        }
+        pluginsDir.cdUp();
+    }
+    return plugins;
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла pluginlistwindow.cpp}
+
+\begin{lstlisting}
+#include "pluginlistwindow.h"
+#include "ui_pluginlistwindow.h"
+
+PluginListWindow::PluginListWindow(QWidget *parent) : QDialog(parent), ui(new Ui::PluginListWindow) {
+    ui->setupUi(this);
+    this->settings = new QSettings("mike-schekotov", "sve");
+
+    // plugins root
+    QString pluginsPath = this->settings->value("plugins/plugin_dir", "./plugins/").toString();
+    this->pluginsDir    = QDir(pluginsPath);
+
+    // load plugins list on start
+    QList<QTreeWidgetItem*> plugins = this->loadPluginsList();
+    this->ui->pluginList->insertTopLevelItems(0, plugins);
+
+    connect(this->ui->refreshButton, SIGNAL(clicked()), this, SLOT(refreshList()));
+    connect(this->ui->cancelButton,  SIGNAL(clicked()), this, SLOT(reject()));
+    connect(this->ui->okButton,      SIGNAL(clicked()), this, SLOT(save()));
+}
+
+PluginListWindow::~PluginListWindow() {
+    delete ui;
+}
+
+// load list of plugins from disk
+QList<QTreeWidgetItem *> PluginListWindow::loadPluginsList() {
+    QList<QTreeWidgetItem*> items;
+
+    // possible plugins
+    QStringList plugins        = this->pluginsDir.entryList(QDir::NoDotAndDotDot | QDir::Dirs, QDir::Name);
+    QStringList enabledPlugins = this->settings->value("plugins/enabled",  "").toStringList();
+    QStringList panelPlugins   = this->settings->value("plugins/on_panel", "").toStringList();
+
+    foreach(QString p, plugins) {
+        // change to plugin directory
+        this->pluginsDir.cd(p);
+        Plugin *plugin = new Plugin(this->pluginsDir);
+        this->pluginsDir.cdUp();
+        if (plugin->isValid()) {
+            QString pluginName = plugin->getName();
+            // add list item
+            QTreeWidgetItem *i = new QTreeWidgetItem();
+            i->setFlags(i->flags() | Qt::ItemIsUserCheckable);
+            // is enabled
+            i->setText((int)LCol::isEnabled, "");
+            i->setCheckState(
+                (int)LCol::isEnabled,
+                (Qt::CheckState)(2 * enabledPlugins.contains(pluginName, Qt::CaseInsensitive)) // (false, true) = (0, 2)
+            );
+            // plugin name
+            i->setText((int)LCol::pluginName, pluginName);
+            // is on panel
+            i->setText((int)LCol::isOnPanel, "");
+            i->setCheckState(
+                (int)LCol::isOnPanel,
+                (Qt::CheckState)(2 * panelPlugins.contains(pluginName, Qt::CaseInsensitive)) // (false, true) = (0, 2)
+            );
+            // author
+            i->setText((int)LCol::author, plugin->getAuthor());
+            // description
+            i->setText((int)LCol::description, plugin->getDescription());
+            items.append(i);
+        }
+    }
+    return items;
+}
+
+// refresh view
+void PluginListWindow::refreshList() {
+    // clear list
+    this->ui->pluginList->clear();
+    // load plugins
+    QList<QTreeWidgetItem *> plugins = this->loadPluginsList();
+    this->ui->pluginList->insertTopLevelItems(0, plugins);
+}
+
+// dump changes to config
+void PluginListWindow::save() {
+    QList<QTreeWidgetItem *> plugins = this->ui->pluginList->findItems("*", Qt::MatchWildcard, (int)LCol::pluginName);
+    QString name;
+    bool isEnabled, isOnPanel;
+    QStringList enabledPlugins, panelPlugins;
+    foreach(QTreeWidgetItem *plugin, plugins) {
+        name = plugin->text((int)LCol::pluginName);
+        isEnabled = plugin->checkState((int)LCol::isEnabled);
+        isOnPanel = plugin->checkState((int)LCol::isOnPanel);
+        if (isEnabled) {
+            enabledPlugins.append(name);
+            if (isOnPanel) {
+                panelPlugins.append(name);
+            }
+        }
+    }
+
+    this->settings->setValue("plugins/enabled",  enabledPlugins);
+    this->settings->setValue("plugins/on_panel", panelPlugins);
+
+    this->accept();
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла preferencesdialog.cpp}
+
+\begin{lstlisting}
+#include "preferencesdialog.h"
+#include "ui_preferencesdialog.h"
+
+PreferencesDialog::PreferencesDialog(QWidget *parent) : QDialog(parent), ui(new Ui::PreferencesDialog) {
+    ui->setupUi(this);
+
+    settings = new QSettings("mike-schekotov", "sve");
+
+    QSize docSize  = settings->value("default_doc/blank_size").toSize();
+    QSize nodeSize = settings->value("default_doc/node_size").toSize();
+
+    ui->docWidthSpinner->setValue(docSize.width());
+    ui->docHeightSpinner->setValue(docSize.height());
+
+    ui->nodeWidthSpinner->setValue(nodeSize.width());
+    ui->nodeHeightSpinner->setValue(nodeSize.height());
+
+    ui->pathField->setText(settings->value("plugins/plugin_dir").toString());
+
+    connect(ui->okButton,     SIGNAL(clicked()), this, SLOT(saveOptions()));
+    connect(ui->cancelButton, SIGNAL(clicked()), this, SLOT(reject()));
+    connect(ui->browseButton, SIGNAL(clicked()), this, SLOT(browsePath()));
+}
+
+PreferencesDialog::~PreferencesDialog()
+{
+    delete ui;
+}
+
+void PreferencesDialog::browsePath() {
+    QString pluginDir = QFileDialog::getExistingDirectory(this, tr("Set plugins directory"), "./");
+    if (!pluginDir.isEmpty()) {
+        ui->pathField->setText(pluginDir);
+    }
+}
+
+void PreferencesDialog::saveOptions() {
+    settings->setValue("default_doc/blank_size", QSize(ui->docWidthSpinner->value(),  ui->docHeightSpinner->value()));
+    settings->setValue("default_doc/node_size",  QSize(ui->nodeWidthSpinner->value(), ui->nodeHeightSpinner->value()));
+    settings->setValue("plugins/plugin_dir",     ui->pathField->text());
+    this->accept();
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла sourceviewdialog.cpp}
+
+\begin{lstlisting}
+#include "sourceviewdialog.h"
+#include "ui_sourceviewdialog.h"
+
+SourceViewDialog::SourceViewDialog(QString vhdlSource, QWidget *parent) : QDialog(parent), ui(new Ui::SourceViewDialog) {
+    ui->setupUi(this);
+
+    this->view = new QWebView();
+    this->ui->gridLayout->addWidget(this->view, 0, 0, 1, 1);
+
+    this->vhdlSource = vhdlSource;
+
+    connect(this->ui->okButton, SIGNAL(clicked()), this, SLOT(accept()));
+    connect(this->ui->validateButton, SIGNAL(clicked()), this, SLOT(validate()));
+}
+
+SourceViewDialog::~SourceViewDialog() {
+    delete ui;
+}
+
+void SourceViewDialog::setSource(QString src) {
+    QFile css(":/css/hl-css");
+    QFile js(":/js/hl-js");
+    QFile main(":/js/main-js");
+    css.open(QFile::ReadOnly);
+    js.open(QFile::ReadOnly);
+    main.open(QFile::ReadOnly);
+    this->view->setHtml(this->htmlTemplate.arg(css.readAll(), js.readAll(), src, main.readAll()));
+    css.close();
+    js.close();
+    main.close();
+}
+
+void SourceViewDialog::validate() {
+    QTemporaryFile vhdl("sve-XXXXXX.vhdl");
+    vhdl.setAutoRemove(true);
+    if (vhdl.open()) {
+        vhdl.write(this->vhdlSource.toUtf8());
+        vhdl.close();
+        // params
+        QStringList params;
+        params << "-s" << vhdl.fileName();
+        // process
+        QProcess *ghdl = new QProcess();
+        ghdl->setProcessChannelMode(QProcess::MergedChannels);
+        // error handler
+        connect(ghdl, SIGNAL(error(QProcess::ProcessError)), this, SLOT(handleError(QProcess::ProcessError)));
+        ghdl->start("ghdl", params);
+        ghdl->waitForFinished(-1);
+        QString output = ghdl->readAllStandardOutput();
+        if (output != "") {
+            this->ui->log->setText(output);
+        }
+        else {
+            if (this->ghdlNotFound) {
+                this->ui->log->setText(tr("Error running GHDL.\nIs it fall yet?"));
+            }
+            else {
+                this->ui->log->setText(tr("Code seems to be OK!"));
+            }
+        }
+    }
+    else {
+        this->ui->log->setText(tr("Error creating temporary file"));
+    }
+}
+
+void SourceViewDialog::handleError(QProcess::ProcessError) {
+    this->ghdlNotFound = true;
+}
+\end{lstlisting}~\\
+
+\subsubsection*{Содержимое файла unode.cpp}
+
+\begin{lstlisting}
+#include "unode.h"
+
+UNode::UNode(QWidget *parent) : QLabel(parent) {
+    this->setContextMenuPolicy(Qt::CustomContextMenu);
+}
+
+UNode::UNode(QString text, QWidget *parent) : QLabel(text, parent) {
+    this->setContextMenuPolicy(Qt::CustomContextMenu);
+}
+
+UNode::UNode(const UNode &unode) : QLabel() {
+    this->node     = unode.node;
+    this->xml      = unode.xml;
+    this->startPos = unode.startPos;
+    this->setContextMenuPolicy(Qt::CustomContextMenu);
+}
+
+UNode::~UNode() {}
+
+QString UNode::getID() {
+    return this->attr("id");
+}
+
+QString UNode::attr(QString attr) {
+    return this->node.attribute(attr);
+}
+
+void UNode::setNodeAttribute(QString attr, double value) {
+    this->node.setAttribute(attr, value);
+}
+void UNode::setNodeAttribute(QString attr, float value) {
+    this->node.setAttribute(attr, value);
+}
+void UNode::setNodeAttribute(QString attr, uint value) {
+    this->node.setAttribute(attr, value);
+}
+void UNode::setNodeAttribute(QString attr, int value) {
+    this->node.setAttribute(attr, value);
+}
+void UNode::setNodeAttribute(QString attr, QString value) {
+    this->node.setAttribute(attr, value);
+}
+
+void UNode::setPosition(int x, int y) {
+    this->setGeometry(
+        (x >= 0) ? x : 0,
+        (y >= 0) ? y : 0,
+        this->width(),
+        this->height()
+    );
+    this->startPos = QPoint(x, y);
+    this->node.setAttribute("x", x);
+    this->node.setAttribute("y", y);
+}
+
+void UNode::mousePressEvent(QMouseEvent *ev) {
+    if (ev->button() == Qt::LeftButton) {
+        this->startPos = ev->pos();
+        emit(activated());
+    }
+}
+
+void UNode::mouseMoveEvent(QMouseEvent *ev) {
+    if (ev->buttons() & Qt::LeftButton) {
+        int distance = (ev->pos() - this->startPos).manhattanLength();
+        if (distance >= 10)
+            this->performDrag(ev->pos());
+    }
+}
+
+void UNode::mouseReleaseEvent(QMouseEvent *) {
+    // document changed flag
+    if (this->dragged) {
+        emit altered(AlterType::Moved);
+        this->node.setAttribute("x", this->x());
+        this->node.setAttribute("y", this->y());
+        this->dragged = false;
+    }
+}
+
+void UNode::performDrag(const QPoint endPos) {
+    // grid positioning
+    int newX = 10 * ((this->x() + (endPos - startPos).x()) / 10);
+    int newY = 10 * ((this->y() + (endPos - startPos).y()) / 10);
+    this->setGeometry(
+        (newX >= 0) ? newX : 0,
+        (newY >= 0) ? newY : 0,
+        this->width(),
+        this->height()
+    );
+    this->dragged = true;
+}
+
+
+// remove from xml
+void UNode::remove() {
+    emit altered(AlterType::Deleted);
+    this->xml->firstChild().removeChild(this->node);
+    delete(this);
+}
+\end{lstlisting}

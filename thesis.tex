@@ -1,0 +1,145 @@
+\documentclass[a4paper,utf8,pointsection,nocolumnvii,nocolumnviii,nocolumnsxix,pointsubsection]{eskdtext}
+
+% черная магия XeTeX
+\input{./header-xetex.tex}
+% белая магия LaTeX
+\input{./header-common.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Название дипломного проекта
+%\ESKDtitle{САПР для разработки программного обеспечения программируемых логических интегральных схем}
+\ESKDtitle{Пояснительная записка}
+% Шифр проекта
+\ESKDsignature{ДП-УлГТУ-23020165-09/626-2014}
+% Автор курсового проекта
+\ESKDauthor{Щекотов М.М.}
+% Утверждено (для титульного листа по ЕСКД)
+\ESKDtitleApprovedBy{аналитик-проектировщик ООО "Айтек-Групп"}{Грачева Н.О.}
+% Дата создания документа
+\ESKDdate{2014/02/01}
+% Учебная группа
+\ESKDcolumnIX{ИСТд-51}
+% Проверил
+\ESKDcolumnXIfII{Грачева Н.О.}
+%\ESKDcolumnXIfII{Рыбкина М.В.}
+%\ESKDcolumnXIfII{Куклев В.А.}
+% Рецензент
+\renewcommand{\ESKDcolumnXfIVname}{Реценз.}
+\ESKDcolumnXIfIV{Ушаков А.В.}
+% Утвердил
+\ESKDcolumnXIfVI{Докторов А.Е.}
+% Литера
+\ESKDcolumnIVfI{У}
+\ESKDcolumnIVfII{Р}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% подпись рисунка
+\renewcommand{\figurename}{Рис.}
+
+% ускорители
+\input{./steroids.tex}
+
+\onehalfspacing
+\ESKDstyle{empty}
+
+% титульный лист
+\input{./titlepage.tex}
+
+% задание на диплом
+\newpage
+\input{./task.tex}
+
+% аннотация
+\newpage
+\input{./annotation.tex}
+
+\newpage
+% общая форма рамок для документа
+\ESKDstyle{formIIab}
+\ESKDthisStyle{formII}
+% содержание
+\tableofcontents
+
+\newpage
+\ESKDthisStyle{formII}
+\section*{Cписок использованных сокращений и обозначений}\addcontentsline{toc}{section}{Список использованных сокращений и обозначений}
+\input{./abbreviations.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section*{Введение}\addcontentsline{toc}{section}{Введение}
+\input{./introduction.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section{Техническое задание на создание системы} \label{sec:specification}
+\input{./specification.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section{Функциональное моделирование}\label{sec:funcprot}
+\input{./functional-modeling.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section{Анализ конкурентных разработок и требований к функциям} \label{sec:concurents}
+\input{./analysis.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section{Информационное обеспечение системы} \label{sec:informational-supply}
+\input{./informational-supply.tex}
+
+\ESKDthisStyle{formII}
+\section{Математическое обеспечение системы} \label{sec:mathematical-supply}
+\input{./mathematical-supply.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section{Программное обеспечение системы} \label{sec:software}
+\input{./software.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section{Тестирование системы} \label{sec:testing}
+\input{./testing.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section{Экономический раздел} \label{sec:economics}
+\input{./economics.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section{Безопасность и экологичность проекта} \label{sec:safety}
+\input{./safety.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section*{Заключение}\addcontentsline{toc}{section}{Заключение}
+\input{./conclusion.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\renewcommand\refname{Список использованных источников}
+\input{./biblio.tex}
+
+\newpage
+\ESKDthisStyle{formII}
+\section*{Приложения}\addcontentsline{toc}{section}{Приложения}
+\setcounter{appendix}{0}
+\rightappendix{Функциональное моделирование}
+\input{./appendix-functional-modeling.tex}
+
+\newpage
+\rightappendix{Описание программных модулей}
+\input{./appendix-code.tex}
+
+\newpage
+\rightappendix{Исходный код системы}
+\input{./appendix-source.tex}
+\end{document}

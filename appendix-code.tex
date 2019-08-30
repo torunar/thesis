@@ -1,0 +1,1594 @@
+\renewcommand{\thesubsubsection}{\Asbuk{appendix}.\arabic{subsubsection}}
+\setcounter{subsection}{0}
+\subsubsection*{Программный модуль <<main>>}
+Объем: 30 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<main>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Глобальные переменные}} \\
+  \hline
+  1 & QSettings settings & Настройки системы \\ \hline
+  2 & QApplication a & Экземпляр приложения \\ \hline
+  3 & MainWindow w & Главное окно программы \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Подпрограммы}} \\
+  \hline
+  1 & int main(int argc, char *argv[]) &
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item int argc~--- количество аргументов командой строки
+      \item int argv~--- аргументы командной строки
+    \end{itemize}
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item 0, если приложение завершилось успешно
+    \end{itemize}
+  \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<MainWindow>>}
+Объем: 150 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<MainWindow>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class MainWindow : public QMainWindow & Класс главного окна. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<MainWindow>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & Document *activeDocument; & Текущий документ. \\ \hline
+  2 & DocWindow *activeWindow; & Текущее окно документа. \\ \hline
+  3 & QSettings *settings; & Настройки документа. \\ \hline
+  4 & QList<Plugin *> plugins; & Доступные расширения. \\ \hline
+  5 & Ui::MainWindow *ui; & Объект формы. \\ \hline
+  6 & QMdiArea *mdiArea; & Многодокументная область. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit MainWindow(QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & \textasciitilde MainWindow(); & Деструктор. \\ \hline
+  3 & void initPluginsToolbar(); & Выносит кнопки расширений на панель быстрого запуска. \\ \hline
+  4 & void loadPlugins(); & Просматривает папку, указанную в настройках, на наличие расширений, заносит их в QList plugins. \\ \hline
+  5 & void disconnectSlots(); & Отключает обработчики событий от текущего документа. \\ \hline
+  6 & void connectSlots(); & Подключает обработчики событий к активному документу. \\ \hline
+  7 & void createDocument(); & Обработчик события <<Файл \rarr Создать>> главного меню. Создает новое окно документа, добавляет в него документ, переключает контекст. \\ \hline
+  8 & void setActiveDocument(); & Устанавливает *activeDocument на документ в активном окне. \\ \hline
+  9 & void quit(); & Обработчик события <<Файл \rarr Выход>> главного меню. Проверяет открытые документы на наличие изменений, закрывает их, осуществляет выход из приложения. \\ \hline
+  10 & void load(); & Обработчик события <<Файл \rarr Открыть>> главного меню. Создает окно для документа. Передает управление окну документа. \\ \hline
+  11 & void showPluginListWindow(); & Обработчик события <<Настройка \rarr Расширения>> главного меню. Создает и показывает окно управления расширениями. \\ \hline
+  12 & void findPlugin(); & Обработчик события нажатия на кнопку расширения в боковой панели. Выбирает расширение из plugins и передает управление активному документу. \\ \hline
+  13 & void showPreferencesDialog(); & Обработчик события <<Настройка \rarr Параметры>> главного меню. Создает и показывает окно управления параметрами программы. \\ \hline
+  14 & void closeEvent(QCloseEvent *); & Обработчик события закрытия программы. Предотвращает стандартное поведение и передает управление в метод quit(). \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<PluginListWindow>>}
+Объем: 80 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<PluginListWindow>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Перечисления}} \\
+  \hline
+  1 & enum class LCol &
+    Тип колонки.\newline
+    \uline{Значения:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item isEnabled = 0~--- колонка <<Включен>>;
+      \item pluginName = 1 -- колонка <<Расширение>>;
+      \item isOnPanel = 2~--- колонка <<Активен>>;
+      \item author = 3~--- колонка <<Автор>>;
+      \item description = 4~--- колонка <<Описание>>.
+    \end{itemize} \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class PluginListWindow : public QDialog & Класс окна управления расширениями. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<PluginListWindow>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & Ui::PluginListWindow *ui; & Объект формы. \\ \hline
+  1 & QDir pluginsDir; & Текущий документ. \\ \hline
+  3 & QSettings *settings; & Настройки расширений. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit PluginListWindow(QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & \textasciitilde PluginListWindow() & Деструктор. \\ \hline
+  3 & QList<QTreeWidgetItem *> loadPluginsList(); &
+    Сканирует pluginsDir на наличие расширений.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QList<QTreeWidgetItem *>~--- список расширений и их параметров для вставки в QTreeWidget.
+    \end{itemize} \\ \hline
+  4 & void refreshList(); & Обновляет список расширений. \\ \hline
+  5 & void save(); & Сохраняет настройки расширений. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<PreferencesDialog>>}
+Объем: 35 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<PreferencesDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class PreferencesDialog : public QDialog & Класс окна управления настройками программы. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<PreferencesDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & QSettings *settings; & Настройки программы. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit PreferencesDialog(QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & \textasciitilde PreferencesDialog(); & Деструктор. \\ \hline
+  3 & void browsePath(); & Открывает диалог указания папки расширений. \\ \hline
+  4 & void saveOptions(); & Сохраняет настроки программы. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<DocWindow>>}
+Объем: 200 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<DocWindow>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class DocWindow : public QMdiSubWindow & Класс окна (контейнера) документа. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<DocWindow>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & Document *document; & Связанный документ. \\ \hline
+  2 & QStatusBar *statusBar; & Статусная строка родительского окна документа. \\ \hline
+  3 & QList<UNode *> linkNodes; & Буферный список узлов для задания связи. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit DocWindow(QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & \textasciitilde DocWindow(); & Деструктор. \\ \hline
+  3 & void setTitle(const QString title); & Задает заголовок окна.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QString title~--- заголовок
+    \end{itemize}\\ \hline
+  4 & Document *getDocument(); & \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item Document*~--- связанный документ
+    \end{itemize}\\ \hline\\ \hline
+  5 & void addNode(Plugin *plugin); & Добавляет узел выбранного расширения.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item Plugin *plugin~--- расширение
+    \end{itemize}\\ \hline
+  6 & void attachStatusBar(QStatusBar *statusBar); & Регистрирует статусную строку родительского окна для обращений.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QStatusBar *statusBar~--- статусная строка родительского окна
+    \end{itemize}\\ \hline
+  7 & bool renderNodes(); & Обрабатывает XML-дерево вложенного документа, добавляя виджеты элементов в рабочую область. \\ \hline
+  8 & void setStatus(QString text, int timeout); & Устанавливает содержимое статусной строки родительского окна.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString text~--- текст статусной строки
+      \item int timeout~--- время показа сообщения
+    \end{itemize}\\ \hline
+  9 & void closeEvent(QCloseEvent *closeEvent); & Обработчик события закрытия окна. Выдает предупреждение о несохраненных изменениях.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QCloseEvent *closeEvent~--- событие закрытия
+    \end{itemize}\\ \hline
+  10 & void setChanged(bool changed); & Устанавливает флаг изменения для документа.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item bool changed~--- признак измененности
+    \end{itemize}\\ \hline
+  11 & void addLabel(); & Показывает диалоговое окно для ввода текста и добавляет в документ ссылку с этим текстом.\\ \hline
+  12 & void addNode(); & Обработчик события <<Схема \rarr Добавить узел>>. Показывает диалог выбора расширения для добавления, передает документу название выбранного расширения. \\ \hline
+  13 & void addLink(); & Переводит документ в режим добавления метки. \\ \hline
+  14 & void save(); & Сохраняет документ под существующим имененем или показывает диалог сохранения файла, сохраняет документ.\\ \hline
+  15 & void saveAs(); & Показывает диалог сохранения файла, сохраняет документ.\\ \hline
+  16 & bool load(); & Показывает диалог выбора файла, загружает документ из выбранного файла.\\ \hline
+  17 & void setLinkNode(UNode *node, uint nodeCounter); & Обработчик события выбора узла. Добавляет узел к списку выбранных или соединяет выбранные узлы связью.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item UNode *node~--- выбранный узел
+      \item uint nodeCounter~--- счетчик выбранных узлов
+    \end{itemize}\\ \hline
+  18 & void showOptionsDialog(); & Показывает диалог свойств документа, сохраняет изменения. \\ \hline
+  19 & void showSaveImageDialog(); & Показывает диалог сохранения изображения. \\ \hline
+  20 & void viewVHDL(); & Запрашивает исходный код документа, показывает окно просмотра VHDL. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<AddNodeDialog>>}
+Объем: 25 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<AddNodeDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class AddNodeDialog : public QDialog & Класс окна добавления узла из расширения. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<AddNodeDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & Ui::AddNodeDialog *ui & Объект формы. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit AddNodeDialog(QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & \textasciitilde AddNodeDialog(); & Деструктор. \\ \hline
+  3 & void itemSelected(QString item); & Сигнал, запускаемый при выборе расширения.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString item~--- название выбранного расширения
+    \end{itemize}\\ \hline
+  4 & void getSelection(); & Получает текущее выделенное расширение и запускает сигнал itemSelected.\\ \hline
+  5 & void unlockAdd(); & Разблокирует кнопку <<Добавить>>.\\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<DocumentOptionsDialog>>}
+Объем: 15 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<DocumentOptionsDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class DocumentOptionsDialog : public QDialog & Класс окна свойств документа. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<DocumentOptionsDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & Ui::DocumentOptionsDialog *ui & Объект формы. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit DocumentOptionsDialog( QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & \textasciitilde DocumentOptionsDialog(); & Деструктор. \\ \hline
+  3 & void setDimensions(QSize size); & Устанавливает значения счетчиков размера рабочей области.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QSize size~--- размер рабочей области
+    \end{itemize}\\ \hline
+  4 & QSize getDimensions(); & Возвращает введенный размер рабочей области.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QSize ~--- размер рабочей области
+    \end{itemize}\\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<SourceViewDialog>>}
+Объем: 70 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<SourceViewDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class SourceViewDialog : public QDialog & Окно просмотра исходного кода. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<SourceViewDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & Ui::SourceViewDialog *ui & Объект формы. \\ \hline
+  2 & QString htmlTemplate; & Шаблон для страницы исходного кода. \\ \hline
+  3 & QString vhdlSource; & Исходный код. \\ \hline
+  4 & QWebView *view; & Веб-виджет для просмотра HTML-страниц. \\ \hline
+  5 & bool ghdlNotFound; & Признак отсутствия в системе утилиты GHDL. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit SourceViewDialog(QString vhdlSource = "", QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString vhdlSource~--- исходный код
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & \textasciitilde SourceViewDialog(); & Деструктор. \\ \hline
+  3 & void setSource(QString src); & Задает исходный код.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString src~--- исходный код
+    \end{itemize}\\ \hline
+  4 & void validate(); & Проверяет исходный код на валидность, выводит сообщения об ошибках в форму. \\ \hline
+  5 & void handleError( QProcess::ProcessError); & Обрабатывает ошибки запуска внешнего процесса.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QProcess::ProcessError~--- код ошибки
+    \end{itemize}\\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<Document>>}
+Объем: 680 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<Document>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Перечисления}} \\
+  \hline
+  1 & enum NodeType &
+    Тип элемента.\newline
+    \uline{Значения:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item Stub = 0~--- заглушка;
+      \item Node = 1--- узел;
+      \item Label = 2--- метка;
+      \item Link  = 3--- связь;
+    \end{itemize} \\ \hline
+  1 & enum DocumentMode &
+    Режим документа.\newline
+    \uline{Значения:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item Default = 0~--- стандартный режим;
+      \item SelectNode = 1~--- режим выбора узлов;
+    \end{itemize} \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class Document: public QObject & Окно просмотра исходного кода. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<Document>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & QString title; & Заголовок документа. \\ \hline
+  2 & QString filename; & Файл документа. \\ \hline
+  3 & QMdiSubWindow *parent; & Вкладка-контейнер. \\ \hline
+  4 & QScrollArea *container; & Область прокрутки. \\ \hline
+  5 & QFrame *workarea; & Рабочая область. \\ \hline
+  6 & QDomDocument *xml; & XML-представление документа. \\ \hline
+  7 & bool changed; & Признак изменения. \\ \hline
+  8 & DocumentMode mode; & Режим документа. \\ \hline
+  9 & QStack<QByteArray> history; & Стек истории изменений. \\ \hline
+  10 & QList<Plugin*> plugins; & Список расширений, доступных для использования в документе. \\ \hline
+  11 & UNode *activeElement; & Выбранный элемент. \\ \hline
+  12 & uint nodeCounter; & Счетчик выбранных узлов. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit Document(QMdiSubWindow *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QMdiSubWindow *parent~--- контейнер
+    \end{itemize}\\ \hline
+  2 & \textasciitilde Document(); & Деструктор. \\ \hline
+  3 & void altered(bool); & Сигнал, запускаемый при изменении документа.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item bool~--- признак изменения документа
+    \end{itemize}\\ \hline
+  4 & void elementActivated(UNode*, uint); & Сигнал, запускаемый при выборе элемента.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item UNode*~--- выбранный элемент
+      \item uint~--- количество ранее выбранных элементов
+    \end{itemize}\\ \hline
+  5 & void  attachToWindow( QMdiSubWindow *parent); & Прикрепляет документ к контейнеру.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QMdiSubWindow *parent~--- контейнер
+    \end{itemize}\\ \hline
+  6 & QSize getSize(); & Возвращает размер рабочей области.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QSize ~--- размер рабочей области
+    \end{itemize}\\ \hline
+  7 & void  resize(const QSize size); & Задает размер рабочей области.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QSize size~--- размер рабочей области
+    \end{itemize}\\ \hline
+  8 & void  resize(const int w, const int h); & Задает размер рабочей области.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const int w~--- ширина
+      \item const int h~--- высота
+    \end{itemize}\\ \hline
+  9 & bool isChanged(); & Возвращает признак изменения документа.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item bool ~--- признак изменения
+    \end{itemize}\\ \hline
+  10 & void setChanged(bool changed); & Устанавливает признак изменения документа.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item bool changed~--- признак изменения
+    \end{itemize}\\ \hline
+  11 & void addLabel(const QString text,  bool skipHistory = false); & Добавляет виджет метки.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QString text~--- текст метки
+      \item bool skipHistory = false~--- пропустить изменение в истории
+    \end{itemize}\\ \hline
+  12 & void addLabel(const QDomNode node, bool skipHistory = false); & Добавляет виджет метки.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QDomNode node~--- XML-узел
+      \item bool skipHistory = false~--- пропустить изменение в истории
+    \end{itemize}\\ \hline
+  13 & void addNode(Plugin *plugin,       bool skipHistory = false); & Добавляет виджет узла.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item Plugin *plugin~--- расширение
+      \item bool skipHistory = false~--- пропустить изменение в истории
+    \end{itemize}\\ \hline
+  14 & bool addNode(const QDomNode node,  bool skipHistory = false); & Добавляет виджет узла.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QDomNode node~--- XML-узел
+      \item bool skipHistory = false~--- пропустить изменение в истории
+    \end{itemize}\\ \hline
+  15 & void addLink(QList<UNode *> elementNodes, QPair<int, int> connectors, bool skipHistory = false); & Добавляет виджет связи.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QList<UNode *> elementNodes~--- узлы для соединения
+      \item QPair<int, int> connectors~--- порты соединений
+      \item bool skipHistory = false~--- пропустить изменение в истории
+    \end{itemize}\\ \hline
+  16 & void addLink(const QDomNode node,  bool skipHistory = false); & Добавляет виджет связи.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QDomNode node~--- XML-узел
+      \item bool skipHistory = false~--- пропустить изменение в истории
+    \end{itemize}\\ \hline
+  17 & UNode *getNodeByID(QString id); & Возвращает элемент докумнета по его ID.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString id~--- ID элемента
+    \end{itemize}
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item UNode*~--- элемент
+    \end{itemize}\\ \hline
+  18 & bool renderNodes(); & Преобразовывает XML-дерево в набор виджетов.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item bool~--- результат преобразования (true, если успешно)
+    \end{itemize}\\ \hline
+  19 & Plugin     *getPlugin(QString name); & Возвращает расширение из списка доступных по его названию.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString name~--- название расширения
+    \end{itemize}
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item Plugin*~--- расширение
+    \end{itemize}\\ \hline
+  20 & QStringList getPlugins(); & Возвращает доступные расширения.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QStringList~--- список имен доступных расширений
+    \end{itemize}\\ \hline
+  21 & QStringList getUsedPlugins(); & Возвращает использованные расширения.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QStringList~--- список имен использованных расширений
+    \end{itemize}\\ \hline
+  22 & void        setPlugins(QList<Plugin*> plugins); & Задает доступные расширения.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QList<Plugin*> plugins~--- список расширений
+    \end{itemize}\\ \hline
+  23 & void setMode(DocumentMode documentMode); & Задает режим документа.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item DocumentMode documentMode~--- режим документа
+    \end{itemize}\\ \hline
+  24 & void setNodeCounter(uint counter); & Задает количество выбранных узлов.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item uint counter~--- количество выбранных узлов
+    \end{itemize}\\ \hline
+  25 & void resetActiveElement(); & Сбрасывает текущее выделение.\\ \hline
+  26 & void pushToHistory(); & Записывает текущее XML-дерево в стек истории.\\ \hline
+  27 & QPixmap       getImage(); & Сохраняет рабочую область в изображение.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QPixmap~--- изображение
+    \end{itemize}\\ \hline
+  28 & QString       getVHDL(); & Возвращает исходный код на VHDL, описывающий структуру и функционирование схемы.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString~--- исходный код
+    \end{itemize}\\ \hline
+  29 & QDomDocument *getXml(); & Возвращает XML-дерево документа.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QDomDocument~--- XML-дерево
+    \end{itemize}\\ \hline
+  30 & void handleChildSignals(AlterType type); & Обрабатывает сигналы элементов.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item AlterType type~--- тип операции над элементом
+    \end{itemize}\\ \hline
+  31 & void setActiveElement(); & Задает активный элемент. \\ \hline
+  32 & bool save(QString filename); & Сохраняет документ.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString filename~--- путь до файла на диске
+    \end{itemize}
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item bool~--- статус сохранения (true, если успешно)
+    \end{itemize}\\ \hline
+  33 & void load(QString filename); & Загружает документ.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString filename~--- путь до файла на диске
+    \end{itemize}
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item bool~--- статус загрузки (true, если успешно)
+    \end{itemize}\\ \hline
+  34 & void addNode(QString plugin); & Добавляет узел по имени расширения.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString plugin~--- имя расширения
+    \end{itemize}\\ \hline
+  35 & void undo(); & Откатывает один шаг изменений в документе. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<ConnectionDialog>>}
+Объем: 120 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<ConnectionDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class ConnectionDialog : public QDialog & Окно задания соединений элементов. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<ConnectionDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & Ui::ConnectionDialog *ui & Объект формы. \\ \hline
+  2 & uint inCounter & Количество входов. \\ \hline
+  3 & uint outCounter & Количество выходов. \\ \hline
+  4 & int selectedInput & Выбранный вход. \\ \hline
+  5 & int selectedOutput & Выбранный выход. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit ConnectionDialog(QString vhdlSource = "", QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & ConnectionDialog( QList<UNode *> nodes, QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QList<UNode *> nodes~--- узлы для соединения
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  3 & \textasciitilde ConnectionDialog(); & Деструктор. \\ \hline
+  4 & void setCounters(uint inCounter, uint outCounter); & Задает счетчики входов и выходов.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item uint inCounter~--- счетчик входов
+      \item uint outCounter~--- счетчик выходов
+    \end{itemize}\\ \hline
+  5 & QPair<int, int> getConnectors(); & Возвращает выбранные выход и вход.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QPair<int, int>~--- пара <выход; вход>
+    \end{itemize}\\ \hline
+  6 & void setConnectors(QPair<int, int> connectors); & Устанавливает выделение в списках.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QPair<int, int> connectors~--- пара <выход; вход>
+    \end{itemize}\\ \hline
+  7 & void selectedConnectors(int output, int input); & Сигнал, запускаемый при выборе портов в обоих списках.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item int output~--- выход
+      \item int input~--- вход
+    \end{itemize}\\ \hline
+  8 & void setInput(QListWidgetItem *); & Обрабатывает выбор входного порта.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QListWidgetItem *~--- выбранный вход
+    \end{itemize}\\ \hline
+  9 & void setOutput(QListWidgetItem *); & Обработывает выбор выходного порта.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QListWidgetItem *~--- выбранный выход
+    \end{itemize}\\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<NodePropertiesDialog>>}
+Объем: 70 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<NodePropertiesDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class NodePropertiesDialog : public QDialog & Окно свойств узла. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<NodePropertiesDialog>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & Ui::NodePropertiesDialog *ui & Объект формы. \\ \hline
+  2 & QVector<QString> inputs & Массив имен входов. \\ \hline
+  3 & QVector<QString> outputs & Массив имен выходов. \\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit NodePropertiesDialog( QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & \textasciitilde NodePropertiesDialog(); & Деструктор. \\ \hline
+  3 & void setSource(QString source); & Выставляет исходный код узла на форму.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString source~--- исходный код
+    \end{itemize}\\ \hline
+  4 & void setInputs(QVector<QString> inputs); & Задает массив имен входов.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QVector<QString> inputs~--- массив имен входов
+    \end{itemize}\\ \hline
+  5 & void setOutputs(QVector<QString> outputs); & Задает массив имен выходов.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QVector<QString> outputs~--- массив имен выходов
+    \end{itemize}\\ \hline
+  6 & void save(); & Сохраняет изменения.\\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<UNode>>}
+Объем: 150 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<UNode>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Перечисления}} \\
+  \hline
+  1 & AlterType; & Тип операции над элементом.\newline
+    \uline{Значения:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item None    = 0~--- изменений нет
+      \item Moved   = 1~--- перемещен
+      \item Edited  = 2~--- отредактирован
+      \item Deleted = 3~--- удален
+    \end{itemize}\\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class UNode : public QLabel & Класс элемента. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<UNode>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & QDomElement   node & XML-узел элемента.\\ \hline
+  2 & QDomDocument *xml  & XML-дерево связанного документа.\\ \hline
+  3 & QPoint startPos & Начальное положение элемента в рабочей области.\\ \hline
+  4 & bool   dragged & Признак перемещения.\\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit Unode(QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & UNode(QString text, QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString text~--- дополнительный текст, отображаемый поверх элемента
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  3 & UNode(const UNode \&unode); &
+    Конструктор, создающий копию элемента.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const UNode \&unode~--- копируемый элемент
+    \end{itemize}\\ \hline
+  4 & \textasciitilde UNode(); & Деструктор. \\ \hline
+  5 & QString       getID(); & Возвращает уникальный идентификатор элемента.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString~--- ID элемента
+    \end{itemize}\\ \hline
+  6 & QString attr(QString attr); & Возвращает атрибут XML-узла.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString attr~--- название атрибута
+    \end{itemize}\\ \hline
+  7 & void setNodeAttribute(QString attr, double  value); & Задает атрибут XML-узла.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString attr~--- название атрибута
+      \item double  value~--- значение атрибута
+    \end{itemize}\\ \hline
+  8 & void          setNodeAttribute(QString attr, float   value); & Задает атрибут XML-узла.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString attr~--- название атрибута
+      \item float  value~--- значение атрибута
+    \end{itemize}\\ \hline
+  9 & void          setNodeAttribute(QString attr, uint    value); & Задает атрибут XML-узла.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString attr~--- название атрибута
+      \item uint  value~--- значение атрибута
+    \end{itemize}\\ \hline
+  10 & void          setNodeAttribute(QString attr, int     value); & Задает атрибут XML-узла.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString attr~--- название атрибута
+      \item int  value~--- значение атрибута
+    \end{itemize}\\ \hline
+  11 & void          setNodeAttribute(QString attr, QString value); & Задает атрибут XML-узла.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString attr~--- название атрибута
+      \item QString  value~--- значение атрибута
+    \end{itemize}\\ \hline
+  12 & void setPosition(int x, int y); & Перемещает элемент в рабочей области.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item int x~--- координата X
+      \item int y~--- координата Y
+    \end{itemize}\\ \hline
+  13 & void mousePressEvent( QMouseEvent *ev); & Обрабатывает событие нажатия клавиши мыши.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QMouseEvent *ev~--- событие
+    \end{itemize}\\ \hline
+  14 & void mouseMoveEvent( QMouseEvent *ev); & Обрабатывает событие перемещения мыши.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QMouseEvent *ev~--- событие
+    \end{itemize}\\ \hline
+  15 & void mouseReleaseEvent( QMouseEvent *); & Обрабатывает событие отпускания клавиши мыши.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QMouseEvent *~--- событие
+    \end{itemize}\\ \hline
+  16 & void performDrag(const QPoint endPos); & Выполняет перетаскивание элемента.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QPoint endPos~--- конечное положение элемента
+    \end{itemize}\\ \hline
+  17 & void remove(); & Удаляет элемент.\\ \hline
+  18 & void altered(AlterType); & Сигнал, запускаемый при выполнении действий над элементом.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item AlterType~--- тип операции над элементом
+    \end{itemize}\\ \hline
+  19 & void activated(); & Сигнал, запускаемый при активации элемента.\\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<LabelNode>>}
+Объем: 85 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<LabelNode>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class LabelNode : public UNode & Класс метки. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<LabelNode>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit LabelNode(QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & LabelNode(const QString  text, QDomDocument *xml, QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QString  text~--- текст метки
+      \item QDomDocument *xml -- XML-дерево родительского документа
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  3 & LabelNode(const QDomNode node, QDomDocument *xml, QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QDomNode node~--- XML-узел
+      \item QDomDocument *xml -- XML-дерево родительского документа
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  4 & \textasciitilde LabelNode(); & Деструктор. \\ \hline
+  5 & void showContextMenu(const QPoint \&pos); & Обработчик события показа контекстного меню.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QPoint \&pos~--- позиция показа контекстного меню
+    \end{itemize}\\ \hline
+  6 & void edit(); & Обработчик пункта <<Править>> контекстного меню.\\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\subsubsection*{Программный модуль <<ElementNode>>}
+Объем: 110 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<ElementNode>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class ElementNode : public UNode & Класс узла. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<ElementNode>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & Plugin    *plugin; & Используемое расширение.\\ \hline
+  2 & QSettings *settings; & Настройки узлов.\\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & explicit ElementNode(QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & ElementNode(Plugin *plugin, QDomDocument *xml, QWidget* parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item Plugin *plugin~--- используемое расширение
+      \item QDomDocument *xml -- XML-дерево родительского документа
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  3 & ElementNode(const QDomNode node, Plugin *plugin, QDomDocument *xml, QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QDomNode node~--- XML-узел
+      \item Plugin *plugin~--- используемое расширение
+      \item QDomDocument *xml -- XML-дерево родительского документа
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  4 & \textasciitilde ElementNode(); & Деструктор. \\ \hline
+  5 & void showContextMenu(const QPoint \&pos); & Обработчик события показа контекстного меню.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QPoint \&pos~--- позиция показа контекстного меню
+    \end{itemize}\\ \hline
+  6 & void edit(); & Обработчик пункта <<Править>> контекстного меню.\\ \hline
+  7 & Plugin *getPlugin(); & Возвращает используемое расширение.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item Plugin *~--- используемое расширение
+    \end{itemize}\\ \hline
+  8 & QString getName(); & Возвращает название узла.\newline
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString~--- используемое расширение
+    \end{itemize}\\ \hline
+  9 & QString getInput(int i); & Возвращает название указанного входа.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item int i~--- порядковый номер входа
+    \end{itemize}
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString~--- название
+    \end{itemize}\\ \hline
+  10 & QString getOutput(int i); & Возвращает название указанного выхода.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item int i~--- порядковый номер выхода
+    \end{itemize}
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString~--- название
+    \end{itemize}\\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+\subsubsection*{Программный модуль <<LinkNode>>}
+Объем: 180 строк
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация модуля <<LinkNode>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Классы}} \\
+  \hline
+  1 & class LinkNode: public UNode & Класс связи. \\ \hline
+\end{longtable}
+\normalsize
+\onehalfspacing
+
+\small
+\singlespacing
+\begin{longtable}[h]{|p{0.04\textwidth}|p{0.35\textwidth}|p{0.53\textwidth}|}
+  \caption{Спецификация класса <<LinkNode>>}
+	\\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endfirsthead
+
+  \multicolumn{3}{r}{Продолжение таблицы \thetable{}}
+  \\ \hline
+	  \textbf{\No}                  &
+	  \textbf{Название и тип элемента}  &
+	  \textbf{Описание}
+	\\ \hline
+  \endhead
+
+  \multicolumn{3}{|c|}{\textbf{Поля}} \\
+  \hline
+  1 & QPainter       *painter; & Отрисовщик виджета.\\ \hline
+  2 & QImage          buffer; & Экранный буфер виджета. \\ \hline
+  3 & QPen            pen; &  Кисть для рисования.\\ \hline
+  4 & QSettings      *settings; & Настройки связей.\\ \hline
+  5 & QList<UNode *>  nodes; & Соединяемые узлы.\\ \hline
+  6 & QPair<int, int> connectors; & Соединения узлов.\\ \hline
+  7 & QVector<QPoint> line; & Массив точек, по которым отрисовывается связь.\\ \hline
+
+  \multicolumn{3}{|c|}{\textbf{Методы}} \\
+  \hline
+  1 & LinkNode(QList<UNode *> elementNodes, QPair<int, int> connectors, QDomDocument *xml, QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QList<UNode *> elementNodes~--- список соединяемых узлов
+      \item QPair<int, int> connectors~--- соединения
+      \item QDomDocument *xml -- XML-дерево родительского документа
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  2 & LinkNode(const QDomNode node, QList<UNode *> elementNodes, QDomDocument *xml, QWidget *parent = 0); &
+    Конструктор.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QDomNode node~--- XML-узел
+      \item QList<UNode *> elementNodes~--- список соединяемых узлов
+      \item QDomDocument *xml -- XML-дерево родительского документа
+      \item QWidget *parent~--- родительский виджет
+    \end{itemize}\\ \hline
+  4 & \textasciitilde LinkNode(); & Деструктор. \\ \hline
+  5 & void showContextMenu(const QPoint \&pos); & Обработчик события показа контекстного меню.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item const QPoint \&pos~--- позиция показа контекстного меню
+    \end{itemize}\\ \hline
+  6 & void edit(); & Обрабатывает пункт <<Править>> контекстного меню.\\ \hline
+  7 & bool hasNode(QString nodeID); & Определяет, соединяется ли узел с заданным ID текущей связью.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QString nodeID~--- идентификатор узла
+    \end{itemize}
+    \uline{Возвращаемое значение:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item true, если узел входит в связь
+    \end{itemize}\\ \hline
+  6 & void paintEvent(QPaintEvent *); & Обрабатывает событие отрисовки связи.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QPaintEvent *~--- событие отрисовки
+    \end{itemize}\\ \hline
+  7 & void mouseMoveEvent( QMouseEvent *); & Обрабатывает событие перемещения мыши.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QMouseEvent *~--- событие перемещения мыши
+    \end{itemize}\\ \hline
+  8 & void showConnectionDialog( QList<UNode *> nodes); & Показывает диалог задания соединений узлов.\newline
+    \uline{Параметры:}
+    \begin{itemize}[nolistsep,label=,leftmargin=0cm]
+      \item QList<UNode *> nodes~--- узлы для соединения
+    \end{itemize}\\ \hline
+\end{longtable}
+\normalsize

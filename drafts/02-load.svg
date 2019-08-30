@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="2979.9211"
+   height="2104.7244"
+   viewBox="0 0 2383.9371 1683.7794"
+   id="svg2"
+   style="fill-rule:evenodd"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="02-load.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1342"
+     inkscape:window-height="719"
+     id="namedview68"
+     showgrid="true"
+     inkscape:document-units="mm"
+     units="mm"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="2348.0487"
+     inkscape:cy="66.3971"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-page="true"
+     inkscape:snap-grids="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3045"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       units="mm"
+       spacingx="1mm"
+       spacingy="1mm"
+       dotted="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata132">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <marker
+       markerUnits="strokeWidth"
+       refX="0"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowEnd">
+      <path
+         d="M 0,0 10,5 0,10 z"
+         id="path7"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       markerUnits="strokeWidth"
+       refX="10"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowStart">
+      <path
+         d="M 10,0 0,5 10,10 z"
+         id="path10"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <path
+     d="m 56.7,13.9646 198.45,0 0,39.69 -198.45,0 0,-39.69 z"
+     id="path18"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2228.24,1556.2046 0,113.4"
+     id="path20"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2370.06,1570.3796 -141.79,0"
+     id="path22"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2369.82,1612.9046 -141.55,0"
+     id="path24"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2270.79,1556.2046 0,56.7"
+     id="path26"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2242.45,1570.3796 0,42.525"
+     id="path28"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2256.62,1570.3796 0,42.525"
+     id="path30"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2284.79,1612.9046 0,14.175"
+     id="path32"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2318.81,1612.9046 0,-56.7"
+     id="path34"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2369.88,1669.6046 -524.51,0 0,-155.972 524.51,0 0,155.972 z"
+     id="path36"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2369.65,1627.0466 -524.14,0"
+     id="path38"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2029.82,1584.5616 -184.31,0"
+     id="path40"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2370.06,1556.2046 -524.51,0"
+     id="path42"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2029.78,1669.6046 0,-156.282"
+     id="path44"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1845.51,1527.8186 184.27,0"
+     id="path46"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1845.55,1542.0296 184.27,0"
+     id="path48"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1845.51,1570.3756 184.27,0"
+     id="path50"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1845.1,1598.0756 184.27,0"
+     id="path52"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1845.51,1612.8616 184.27,0"
+     id="path54"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1845.51,1641.2326 184.27,0"
+     id="path56"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1845.51,1655.4186 184.27,0"
+     id="path58"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1865.21,1513.3586 0,71.399"
+     id="path76"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1893.56,1513.4456 0,156.154"
+     id="path78"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1958.91,1513.2666 0,156.333"
+     id="path80"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 2001.43,1513.4626 0,156.137"
+     id="path82"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 56.7,1669.6036 0,-1655.639 2313.36,0 0,1655.639 -2313.36,0 z"
+     id="path98"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <g
+     transform="translate(0,841.8896)"
+     id="g128" />
+  <text
+     xml:space="preserve"
+     style="font-size:12.800001px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="2230.8662"
+     y="1567.5591"
+     id="text3052"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054"
+       x="2230.8662"
+       y="1567.5591">Лит.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.800001px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="2273.386"
+     y="1567.5591"
+     id="text3052-9"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-9"
+       x="2273.386"
+       y="1567.5591">Масса</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.800001px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="2320.4421"
+     y="1567.5591"
+     id="text3052-94"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-6"
+       x="2320.4421"
+       y="1567.5591">Масштаб</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="2230.8662"
+     y="1624.252"
+     id="text3052-0"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0"
+       x="2230.8662"
+       y="1624.252">Лист 1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="2287.5593"
+     y="1624.252"
+     id="text3052-0-2"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-7"
+       x="2287.5593"
+       y="1624.252">Листов 1</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:0%;letter-spacing:-0.16000001px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1845.7628"
+     y="1581.7321"
+     id="text3052-0-7"
+     sodipodi:linespacing="0%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-6"
+       x="1845.7628"
+       y="1581.7321"
+       style="font-size:12.80000114px;letter-spacing:-0.16000001px">Изм.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.800001px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1865.4541"
+     y="1581.7321"
+     id="text3052-0-5"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-2"
+       x="1865.4541"
+       y="1581.7321">Лист</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.800001px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1896.3781"
+     y="1581.1664"
+     id="text3052-0-1"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3"
+       x="1896.3781"
+       y="1581.1664"
+       style="font-size:12.800001px">№ докум.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.800001px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1960.4706"
+     y="1581.7321"
+     id="text3052-0-6"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-0"
+       x="1960.4706"
+       y="1581.7321">Подп.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.800001px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="2001.7136"
+     y="1581.7321"
+     id="text3052-0-75"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-8"
+       x="2001.7136"
+       y="1581.7321">Дата</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1845.7885"
+     y="1594.8887"
+     id="text3052-0-0"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9"
+       x="1845.7885"
+       y="1594.8887"
+       style="font-size:12.80000114px">Разраб.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1845.7885"
+     y="1609.0619"
+     id="text3052-0-0-2"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9-6"
+       x="1845.7885"
+       y="1609.0619"
+       style="font-size:12.80000114px">Пров.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1843.8684"
+     y="1623.631"
+     id="text3052-0-0-3"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9-9"
+       x="1843.8684"
+       y="1623.631"
+       style="font-size:12.80000114px">Т. контр.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1845.7885"
+     y="1651.7499"
+     id="text3052-0-0-3-2"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9-9-5"
+       x="1845.7885"
+       y="1651.7499"
+       style="font-size:12.80000114px">Н. контр.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1845.1868"
+     y="1666.7716"
+     id="text3052-0-0-3-8"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9-9-3"
+       x="1845.1868"
+       y="1666.7716"
+       style="font-size:12.80000114px">Утв.</tspan></text>
+  <g
+     id="g4165">
+    <path
+       d="m 36.855,1669.6036 0,-411.075"
+       id="path102"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.68,1669.6036 0,-411.075"
+       id="path104"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994;stroke-linecap:square"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.68,1669.6036 34.02,0"
+       id="path106"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.6789,1598.7276 34.02,0"
+       id="path108"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.6789,1499.5026 34.02,0"
+       id="path110"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.6789,1428.6276 34.02,0"
+       id="path112"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.6789,1357.7516 34.02,0"
+       id="path114"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.68,1258.5276 34.02,0"
+       id="path116"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994;stroke-linecap:square"
+       inkscape:connector-curvature="0" />
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266"
+       y="34.298595"
+       x="-1667.6963"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.298595"
+         x="-1667.6963"
+         id="tspan3268"
+         sodipodi:role="line">Инв № подп.</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266-1"
+       y="34.196194"
+       x="-1596.6914"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.196194"
+         x="-1596.6914"
+         id="tspan3268-9"
+         sodipodi:role="line">Подп. и дата</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266-4"
+       y="34.196194"
+       x="-1497.5026"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.196194"
+         x="-1497.5026"
+         id="tspan3268-2"
+         sodipodi:role="line">Взам. инв. №</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266-3"
+       y="34.298595"
+       x="-1426.5656"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.298595"
+         x="-1426.5656"
+         id="tspan3268-0"
+         sodipodi:role="line">Инв № дубл.</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266-1-4"
+       y="34.196194"
+       x="-1355.52"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.196194"
+         x="-1355.52"
+         id="tspan3268-9-4"
+         sodipodi:role="line">Подп. и дата</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1894.3783"
+     y="1595.2887"
+     id="text3052-0-1-4"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3-4"
+       x="1894.3783"
+       y="1595.2887"
+       style="font-size:12.80000114px">Щекотов М.М.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1894.3783"
+     y="1609.4619"
+     id="text3052-0-1-4-8"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3-4-6"
+       x="1894.3783"
+       y="1609.4619"
+       style="font-size:12.80000114px">Грачева Н.О.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:15.20000076px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="-250.97116"
+     y="-28.430597"
+     id="text3052-0-1-4-8-3"
+     sodipodi:linespacing="125%"
+     transform="scale(-1,-1)"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3-4-6-0"
+       x="-250.97116"
+       y="-28.430597"
+       style="font-size:15.20000076px">ДП-УлГТУ-23020165-09/626-2014</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:22.40000153px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="2260.3708"
+     y="1655.4332"
+     id="text4039"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4041"
+       x="2260.3708"
+       y="1655.4332">ИСТд-51</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:22.40000153px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="2055.1182"
+     y="1542.0472"
+     id="text4039-6"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4041-7"
+       x="2055.1182"
+       y="1542.0472">ДП-УлГТУ-23020165-09/626-2014</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:14.40000153px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:Sans Italic"
+     x="2230.8662"
+     y="1598.7401"
+     id="text3193"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3195"
+       x="2230.8662"
+       y="1598.7401">У</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:14.40000153px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:Sans Italic"
+     x="2245.0396"
+     y="1598.7401"
+     id="text3197"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3199"
+       x="2245.0396"
+       y="1598.7401">Р</tspan></text>
+  <g
+     transform="translate(13.206993,5.5673271)"
+     style="fill-rule:evenodd"
+     id="g4055">
+    <line
+       id="line11520"
+       y2="1275.259"
+       x2="2120.72"
+       y1="388.39886"
+       x1="2120.72"
+       style="fill-rule:evenodd;stroke:#000000;stroke-width:1.41732299" />
+    <line
+       id="line11522"
+       y2="1106.653"
+       x2="1669.809"
+       y1="387.01059"
+       x1="1669.809"
+       style="fill-rule:evenodd;stroke:#000000;stroke-width:1.41732299" />
+    <line
+       id="line11524"
+       y2="1106.653"
+       x2="1218.8977"
+       y1="388.42722"
+       x1="1218.8977"
+       style="fill-rule:evenodd;stroke:#000000;stroke-width:1.41732299" />
+    <polyline
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polyline11526"
+       points="21.000,1.000 21.000,2.000 21.000,2.000 21.000,29.000 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <path
+       id="path11528"
+       d="m 636.46141,160.35158 263.0503,0 c 36.29835,0 65.74848,19.03935 65.74848,42.49856 0,23.45921 -29.45013,42.49857 -65.74848,42.49857 l -263.0503,0 c -36.29835,0 -65.74849,-19.03936 -65.74849,-42.49857 0,-23.45921 29.45014,-42.49856 65.74849,-42.49856"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path11530"
+       d="m 636.46141,160.35158 263.0503,0 c 36.29835,0 65.74848,19.03935 65.74848,42.49856 0,23.45921 -29.45013,42.49857 -65.74848,42.49857 l -263.0503,0 c -36.29835,0 -65.74849,-19.03936 -65.74849,-42.49857 0,-23.45921 29.45014,-42.49856 65.74849,-42.49856"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11532"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="204.57147"
+       x="770.03351"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">НАЧАЛО</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11534"
+       points="21,7 28,8.5 21,10 14,8.5 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11536"
+       points="21,7 28,8.5 21,10 14,8.5 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11538"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="458.03732"
+       x="770.03351"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Загрузка отменена</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11540"
+       points="15.092,3 28,3 26.908,6 14,6 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11542"
+       points="15.092,3 28,3 26.908,6 14,6 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11544"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="345.00906"
+       x="770.03351"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Показать диалоговое окно выбора файла</text>
+    <rect
+       id="rect11546"
+       height="84.997131"
+       width="394.54727"
+       y="925.32574"
+       x="570.71295"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11548"
+       height="84.997131"
+       width="394.54727"
+       y="925.32574"
+       x="570.71295"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11550"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="966.66443"
+       x="770.03351"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Закрыть файл</text>
+    <rect
+       id="rect11552"
+       height="84.997131"
+       width="394.54727"
+       y="698.66675"
+       x="570.71295"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11554"
+       height="84.997131"
+       width="394.54727"
+       y="698.66675"
+       x="570.71295"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11556"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="740.60791"
+       x="770.03351"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Открыть файл для чтения</text>
+    <rect
+       id="rect11558"
+       height="84.997131"
+       width="394.54727"
+       y="1038.6553"
+       x="570.71295"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11560"
+       height="84.997131"
+       width="394.54727"
+       y="1038.6553"
+       x="570.71295"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11562"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="1079.6926"
+       x="770.03351"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Преобразовать строку в XML-дерево</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11564"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="442.49594"
+       x="543.97699"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">ДА</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11566"
+       points="21,12 28,13.5 21,15 14,13.5 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11568"
+       points="21,12 28,13.5 21,15 14,13.5 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11570"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="599.32263"
+       x="770.03351"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Выбран не SVE-файл</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11572"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="583.78125"
+       x="543.97699"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">ДА</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11574"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="527.26715"
+       x="798.29053"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">НЕТ</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11576"
+       points="15.092,21 28,21 26.908,24 14,24 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11578"
+       points="15.092,21 28,21 26.908,24 14,24 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11580"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="853.63617"
+       x="770.03351"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Прочитать файл в строку</text>
+    <rect
+       id="rect11582"
+       height="84.997131"
+       width="394.54727"
+       y="302.01346"
+       x="1021.6241"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11584"
+       height="84.997131"
+       width="394.54727"
+       y="302.01346"
+       x="1021.6241"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11586"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="345.00906"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Выбрать из XML-дерева все узлы-метки</text>
+    <rect
+       id="rect11588"
+       height="84.997131"
+       width="394.54727"
+       y="642.00201"
+       x="1021.6241"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11590"
+       height="84.997131"
+       width="394.54727"
+       y="642.00201"
+       x="1021.6241"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11592"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="684.09381"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Создать виджет метки</text>
+    <rect
+       id="rect11594"
+       height="84.997131"
+       width="394.54727"
+       y="755.33148"
+       x="1021.6241"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11596"
+       height="84.997131"
+       width="394.54727"
+       y="755.33148"
+       x="1021.6241"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11598"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="797.12207"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Задать текст виджета метки</text>
+    <rect
+       id="rect11600"
+       height="84.997131"
+       width="394.54727"
+       y="868.66101"
+       x="1021.6241"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11602"
+       height="84.997131"
+       width="394.54727"
+       y="868.66101"
+       x="1021.6241"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11604"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="910.15027"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Задать положение виджета метки</text>
+    <rect
+       id="rect11606"
+       height="84.997131"
+       width="394.54727"
+       y="981.99048"
+       x="1021.6241"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11608"
+       height="84.997131"
+       width="394.54727"
+       y="981.99048"
+       x="1021.6241"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11610"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="1023.1785"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Добавить виджет метки в рабочую область</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11612"
+       points="43,34 44,33 44,31 30,31 30,33 31,34 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11614"
+       points="43,34 44,33 44,31 30,31 30,33 31,34 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11616"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="1134.7939"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Labels</text>
+    <rect
+       id="rect11618"
+       height="84.997131"
+       width="394.54727"
+       y="528.67249"
+       x="1021.6241"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11620"
+       height="84.997131"
+       width="394.54727"
+       y="528.67249"
+       x="1021.6241"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11622"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="571.06555"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Выбрать следующий узел</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11624"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="668.55243"
+       x="798.29053"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:start;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">НЕТ</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11626"
+       points="43,7 44,8 44,10 30,10 30,8 31,7 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11628"
+       points="43,7 44,8 44,10 30,10 30,8 31,7 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11630"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="438.53995"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Labels</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11632"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="461.1456"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">пока не достигнут</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11634"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="483.75125"
+       x="1222.1465"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">конец массива меток</text>
+    <rect
+       id="rect11636"
+       height="84.997131"
+       width="394.09637"
+       y="528.67249"
+       x="1472.5353"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11638"
+       height="84.997131"
+       width="394.09637"
+       y="528.67249"
+       x="1472.5353"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11640"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="571.06555"
+       x="1674.0334"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Выбрать следующий узел</text>
+    <rect
+       id="rect11642"
+       height="84.997131"
+       width="394.54727"
+       y="868.66101"
+       x="1472.5353"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11644"
+       height="84.997131"
+       width="394.54727"
+       y="868.66101"
+       x="1472.5353"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11646"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="910.15027"
+       x="1674.2595"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Задать положение виджета узла</text>
+    <rect
+       id="rect11648"
+       height="84.997131"
+       width="394.54727"
+       y="981.99048"
+       x="1472.5353"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11650"
+       height="84.997131"
+       width="394.54727"
+       y="981.99048"
+       x="1472.5353"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11652"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="1023.1785"
+       x="1674.2595"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Добавить виджет узла в рабочую область</text>
+    <rect
+       id="rect11654"
+       height="83.580513"
+       width="394.54727"
+       y="642.00201"
+       x="1472.5353"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11656"
+       height="83.580513"
+       width="394.54727"
+       y="642.00201"
+       x="1472.5353"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11658"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="683.38739"
+       x="1674.2595"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Выбрать связанное расширение</text>
+    <rect
+       id="rect11660"
+       height="86.413742"
+       width="394.54727"
+       y="755.33148"
+       x="1472.5353"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11662"
+       height="86.413742"
+       width="394.54727"
+       y="755.33148"
+       x="1472.5353"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11664"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="797.82849"
+       x="1674.2595"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Создать виджет узла</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11666"
+       points="59,7 60,8 60,10 46,10 46,8 47,7 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11668"
+       points="59,7 60,8 60,10 46,10 46,8 47,7 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11670"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="438.53995"
+       x="1674.2595"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Nodes</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11672"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="461.1456"
+       x="1674.2595"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">пока не достигнут</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11674"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="483.75125"
+       x="1674.2595"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">конец массива узлов</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11676"
+       points="59,34 60,33 60,31 46,31 46,33 47,34 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11678"
+       points="59,34 60,33 60,31 46,31 46,33 47,34 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11680"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="1134.7939"
+       x="1674.2595"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Nodes</text>
+    <rect
+       id="rect11682"
+       height="84.997131"
+       width="394.54727"
+       y="302.01346"
+       x="1472.5353"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11684"
+       height="84.997131"
+       width="394.54727"
+       y="302.01346"
+       x="1472.5353"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11686"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="345.00906"
+       x="1674.2595"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Выбрать из XML-дерева все узлы-элементы</text>
+    <rect
+       id="rect11688"
+       height="84.997131"
+       width="394.54727"
+       y="302.01346"
+       x="1923.4464"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11690"
+       height="84.997131"
+       width="394.54727"
+       y="302.01346"
+       x="1923.4464"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11692"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="345.00906"
+       x="2126.3726"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Выбрать из XML-дерева все узлы-связи</text>
+    <rect
+       id="rect11694"
+       height="84.997131"
+       width="394.54727"
+       y="642.00201"
+       x="1923.4464"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11696"
+       height="84.997131"
+       width="394.54727"
+       y="642.00201"
+       x="1923.4464"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11698"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="684.09381"
+       x="2126.3726"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Создать виджет связи</text>
+    <rect
+       id="rect11700"
+       height="84.997131"
+       width="394.09637"
+       y="528.67249"
+       x="1923.4464"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11702"
+       height="84.997131"
+       width="394.09637"
+       y="528.67249"
+       x="1923.4464"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11704"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="571.06555"
+       x="2126.1462"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Выбрать следующий узел</text>
+    <rect
+       id="rect11706"
+       height="84.997131"
+       width="394.54727"
+       y="755.33148"
+       x="1923.4464"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11708"
+       height="84.997131"
+       width="394.54727"
+       y="755.33148"
+       x="1923.4464"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11710"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="797.12207"
+       x="2126.3726"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Задать соединения связи</text>
+    <rect
+       id="rect11712"
+       height="84.997131"
+       width="394.54727"
+       y="868.66101"
+       x="1923.4464"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <rect
+       id="rect11714"
+       height="84.997131"
+       width="394.54727"
+       y="868.66101"
+       x="1923.4464"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11716"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="910.15027"
+       x="2126.3726"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Добавить виджет связи в рабочую область</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11718"
+       points="75,7 76,8 76,10 62,10 62,8 63,7 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11720"
+       points="75,7 76,8 76,10 62,10 62,8 63,7 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11722"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="438.53995"
+       x="2126.3726"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Links</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11724"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="461.1456"
+       x="2126.3726"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">пока не достигнут</text>
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11726"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="483.75125"
+       x="2126.3726"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">конец массива связей</text>
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11728"
+       points="75,30 76,29 76,27 62,27 62,29 63,30 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11730"
+       points="75,30 76,29 76,27 62,27 62,29 63,30 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11732"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="1021.7657"
+       x="2126.3726"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Links</text>
+    <polyline
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polyline11734"
+       points="21.000,32.000 21.000,35.000 29.000,35.000 29.000,2.000 37.000,2.000 37.000,3.000 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <polyline
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polyline11736"
+       points="37.000,34.000 37.000,35.000 45.000,35.000 45.000,2.000 53.000,2.000 53.000,3.000 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <polyline
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polyline11738"
+       points="53.000,34.000 53.000,35.000 61.000,35.000 61.000,2.000 69.000,2.000 69.000,3.000 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <path
+       id="path11740"
+       d="m 1989.195,1265.3143 263.0503,0 c 36.2983,0 65.7484,19.0393 65.7484,42.4985 0,23.4592 -29.4501,42.4986 -65.7484,42.4986 l -263.0503,0 c -36.2984,0 -65.7485,-19.0394 -65.7485,-42.4986 0,-23.4592 29.4501,-42.4985 65.7485,-42.4985"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <path
+       id="path11742"
+       d="m 1989.195,1265.3143 263.0503,0 c 36.2983,0 65.7484,19.0393 65.7484,42.4985 0,23.4592 -29.4501,42.4986 -65.7484,42.4986 l -263.0503,0 c -36.2984,0 -65.7485,-19.0394 -65.7485,-42.4986 0,-23.4592 29.4501,-42.4985 65.7485,-42.4985"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1.41732299" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11744"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="1306.5969"
+       x="2126.3726"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">КОНЕЦ</text>
+    <line
+       id="line11746"
+       y2="599.50342"
+       x2="487.6889"
+       y1="599.50342"
+       x1="570.71295"
+       style="fill-rule:evenodd;stroke:#000000;stroke-width:1.41732299" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11748"
+       points="-0.908,12 12,12 10.908,15 -2,15 "
+       style="fill:#ffffff;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11750"
+       points="-0.908,12 12,12 10.908,15 -2,15 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <text
+       transform="scale(0.99734178,1.0026653)"
+       id="text11752"
+       font-weight="400"
+       font-style="normal"
+       font-size="0.80"
+       y="599.32263"
+       x="317.9205"
+       style="font-size:22.40000153px;font-style:italic;font-weight:400;text-anchor:middle;fill:#000000;fill-rule:evenodd;stroke-width:1.41732299;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic">Показать сообщение об ошибке</text>
+    <polyline
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polyline11754"
+       points="14.000,8.500 -3.000,8.500 -3.000,36.000 69.000,36.000 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11756"
+       points="69,36 68.3,36.15 68.475,36 68.3,35.85 "
+       style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11758"
+       points="69,36 68.3,36.15 68.475,36 68.3,35.85 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+    <line
+       id="line11760"
+       y2="1236.9819"
+       x2="317.07541"
+       y1="643.41864"
+       x1="317.07541"
+       style="fill-rule:evenodd;stroke:#000000;stroke-width:1.41732299" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11762"
+       points="5,36 4.85,35.3 5,35.475 5.15,35.3 "
+       style="fill:#000000;fill-rule:evenodd;stroke:none" />
+    <polygon
+       transform="matrix(28.181948,0,0,28.332376,176.16565,217.01633)"
+       id="polygon11764"
+       points="5,36 4.85,35.3 5,35.475 5.15,35.3 "
+       style="fill:none;stroke:#000000;stroke-width:0.05015819" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:16.00000191px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:Sans Italic"
+     x="2129.584"
+     y="1576.3947"
+     id="text3743"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3745"
+       x="2129.584"
+       y="1576.3947">САПР ПО ПЛИС.</tspan><tspan
+       sodipodi:role="line"
+       x="2129.584"
+       y="1596.3947"
+       id="tspan3206">Схема подпрограммы загрузки</tspan><tspan
+       sodipodi:role="line"
+       x="2129.584"
+       y="1616.3947"
+       id="tspan3747">документа</tspan></text>
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 2979.9211,2104.7244 2979.9211,0 0,0 0,2104.7244 z"
+     id="path3225"
+     inkscape:connector-curvature="0"
+     transform="matrix(0.80000006,0,0,0.80000006,0,-1.1175777e-4)" />
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1846.5027"
+     y="1637.7649"
+     id="text3052-0-0-3-0"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9-9-1"
+       x="1846.5027"
+       y="1637.7649"
+       style="font-size:12.80000114px">Реценз.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1895.4359"
+     y="1637.7649"
+     id="text3052-0-1-4-8-6"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3-4-6-4"
+       x="1895.4359"
+       y="1637.7649"
+       style="font-size:12.80000114px">Ушаков А.В.</tspan></text>
+</svg>

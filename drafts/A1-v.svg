@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="2104.7244"
+   height="2979.9211"
+   viewBox="0 0 1683.7796 2383.9368"
+   id="svg2"
+   style="fill-rule:evenodd"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="A1-v.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1342"
+     inkscape:window-height="719"
+     id="namedview3740"
+     showgrid="true"
+     inkscape:document-units="mm"
+     units="mm"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="0.22400217"
+     inkscape:cx="1659.8581"
+     inkscape:cy="2289.4051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:snap-grids="false"
+     inkscape:snap-page="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3742"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       units="mm"
+       spacingx="1mm"
+       spacingy="1mm"
+       dotted="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata134">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4">
+    <marker
+       markerUnits="strokeWidth"
+       refX="0"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowEnd">
+      <path
+         d="M 0,0 10,5 0,10 z"
+         id="path7"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       markerUnits="strokeWidth"
+       refX="10"
+       refY="5"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto"
+       viewBox="0 0 10 10"
+       id="ArrowStart">
+      <path
+         d="M 10,0 0,5 10,10 z"
+         id="path10"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <path
+     d="m 1670.48,14.827 0,198.45 -39.69,0 0,-198.45 39.69,0 z"
+     id="path18"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 56.4687,14.827 1614.0113,0 0,2355.282 -1614.0113,0 0,-2355.282 z"
+     id="path100"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <g
+     transform="translate(0,1542.047)"
+     id="g130" />
+  <path
+     d="m 1528.66,2256.709 0,113.4"
+     id="path20"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1670.48,2270.884 -141.79,0"
+     id="path22"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1670.24,2313.409 -141.55,0"
+     id="path24"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1571.21,2256.709 0,56.7"
+     id="path26"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1542.87,2270.884 0,42.525"
+     id="path28"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1557.04,2270.884 0,42.525"
+     id="path30"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1585.21,2313.409 0,14.175"
+     id="path32"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1619.23,2313.409 0,-56.7"
+     id="path34"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1670.3,2370.109 -524.51,0 0,-155.972 524.51,0 0,155.972 z"
+     id="path36"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1670.07,2327.551 -524.14,0"
+     id="path38"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1330.24,2285.066 -184.31,0"
+     id="path40"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1670.48,2256.709 -524.51,0"
+     id="path42"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1330.2,2370.109 0,-156.282"
+     id="path44"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1145.93,2228.323 184.27,0"
+     id="path46"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1145.97,2242.534 184.27,0"
+     id="path48"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1145.93,2270.88 184.27,0"
+     id="path50"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1145.52,2298.58 184.27,0"
+     id="path52"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1145.93,2313.366 184.27,0"
+     id="path54"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1145.93,2341.737 184.27,0"
+     id="path56"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1145.93,2355.923 184.27,0"
+     id="path58"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1165.63,2213.863 0,71.399"
+     id="path76"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1193.98,2213.95 0,156.154"
+     id="path78"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1259.33,2213.771 0,156.333"
+     id="path80"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 1301.85,2213.967 0,156.137"
+     id="path82"
+     style="fill:none;stroke:#000000;stroke-width:1.13399994"
+     inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1531.2856"
+     y="2268.0659"
+     id="text3052"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054"
+       x="1531.2856"
+       y="2268.0659">Лит.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1573.8054"
+     y="2268.0659"
+     id="text3052-9"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-9"
+       x="1573.8054"
+       y="2268.0659">Масса</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1620.8616"
+     y="2268.0659"
+     id="text3052-94"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-6"
+       x="1620.8616"
+       y="2268.0659">Масштаб</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1531.2856"
+     y="2324.7588"
+     id="text3052-0"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0"
+       x="1531.2856"
+       y="2324.7588">Лист</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1587.9788"
+     y="2324.7588"
+     id="text3052-0-2"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-7"
+       x="1587.9788"
+       y="2324.7588">Листов</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:0%;letter-spacing:-0.16000001px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1146.1823"
+     y="2282.2388"
+     id="text3052-0-7"
+     sodipodi:linespacing="0%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-6"
+       x="1146.1823"
+       y="2282.2388"
+       style="font-size:12.80000114px;letter-spacing:-0.16000001px">Изм.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1165.8735"
+     y="2282.2388"
+     id="text3052-0-5"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-2"
+       x="1165.8735"
+       y="2282.2388">Лист</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1196.7975"
+     y="2281.6731"
+     id="text3052-0-1"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3"
+       x="1196.7975"
+       y="2281.6731"
+       style="font-size:12.80000114px">№ докум.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1260.89"
+     y="2282.2388"
+     id="text3052-0-6"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-0"
+       x="1260.89"
+       y="2282.2388">Подп.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1302.1331"
+     y="2282.2388"
+     id="text3052-0-75"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-8"
+       x="1302.1331"
+       y="2282.2388">Дата</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1146.2079"
+     y="2295.3955"
+     id="text3052-0-0"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9"
+       x="1146.2079"
+       y="2295.3955"
+       style="font-size:12.80000114px">Разраб.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1146.2079"
+     y="2309.5686"
+     id="text3052-0-0-2"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9-6"
+       x="1146.2079"
+       y="2309.5686"
+       style="font-size:12.80000114px">Пров.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1144.2878"
+     y="2324.1377"
+     id="text3052-0-0-3"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9-9"
+       x="1144.2878"
+       y="2324.1377"
+       style="font-size:12.80000114px">Т. контр.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1146.2079"
+     y="2352.2566"
+     id="text3052-0-0-3-2"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9-9-5"
+       x="1146.2079"
+       y="2352.2566"
+       style="font-size:12.80000114px">Н. контр.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1145.6062"
+     y="2367.2783"
+     id="text3052-0-0-3-8"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-9-9-3"
+       x="1145.6062"
+       y="2367.2783"
+       style="font-size:12.80000114px">Утв.</tspan></text>
+  <g
+     transform="translate(-1.3652999,700.5054)"
+     style="fill-rule:evenodd"
+     id="g4165">
+    <path
+       d="m 36.855,1669.6036 0,-411.075"
+       id="path102"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.68,1669.6036 0,-411.075"
+       id="path104"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994;stroke-linecap:square"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.68,1669.6036 34.02,0"
+       id="path106"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.6789,1598.7276 34.02,0"
+       id="path108"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.6789,1499.5026 34.02,0"
+       id="path110"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.6789,1428.6276 34.02,0"
+       id="path112"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.6789,1357.7516 34.02,0"
+       id="path114"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m 22.68,1258.5276 34.02,0"
+       id="path116"
+       style="fill:none;stroke:#000000;stroke-width:1.13399994;stroke-linecap:square"
+       inkscape:connector-curvature="0" />
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266"
+       y="34.298595"
+       x="-1667.6963"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.298595"
+         x="-1667.6963"
+         id="tspan3268"
+         sodipodi:role="line">Инв № подп.</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266-1"
+       y="34.196194"
+       x="-1596.6914"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.196194"
+         x="-1596.6914"
+         id="tspan3268-9"
+         sodipodi:role="line">Подп. и дата</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266-4"
+       y="34.196194"
+       x="-1497.5026"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.196194"
+         x="-1497.5026"
+         id="tspan3268-2"
+         sodipodi:role="line">Взам. инв. №</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266-3"
+       y="34.298595"
+       x="-1426.5656"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.298595"
+         x="-1426.5656"
+         id="tspan3268-0"
+         sodipodi:role="line">Инв № дубл.</tspan></text>
+    <text
+       transform="matrix(0,-1,1,0,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3266-1-4"
+       y="34.196194"
+       x="-1355.52"
+       style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+       xml:space="preserve"><tspan
+         y="34.196194"
+         x="-1355.52"
+         id="tspan3268-9-4"
+         sodipodi:role="line">Подп. и дата</tspan></text>
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1194.9419"
+     y="2295.4468"
+     id="text3052-0-1-4"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3-4"
+       x="1194.9419"
+       y="2295.4468"
+       style="font-size:12.80000114px">Щекотов М.М.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1194.9034"
+     y="2309.5686"
+     id="text3052-0-1-4-8"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3-4-6"
+       x="1194.9034"
+       y="2309.5686"
+       style="font-size:12.80000114px">Грачева Н.О.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:12.80000114px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1195.0699"
+     y="2367.2783"
+     id="text3052-0-1-4-8-1"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3-4-6-8"
+       x="1195.0699"
+       y="2367.2783"
+       style="font-size:12.80000114px">Докторов А.Е.</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:15.20000076px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="-209.75087"
+     y="1656.3738"
+     id="text3052-0-1-4-8-3"
+     sodipodi:linespacing="125%"
+     transform="matrix(0,-1,1,0,0,0)"><tspan
+       sodipodi:role="line"
+       id="tspan3054-0-3-4-6-0"
+       x="-209.75087"
+       y="1656.3738"
+       style="font-size:15.20000076px">ДП-УлГТУ-23020165-09/626-2014</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:22.40000153px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1565.8827"
+     y="2355.5906"
+     id="text4039"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4041"
+       x="1565.8827"
+       y="2355.5906">ИСТд-51</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:22.40000153px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     x="1360.63"
+     y="2242.2046"
+     id="text4039-6"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan4041-7"
+       x="1360.63"
+       y="2242.2046">ДП-УлГТУ-23020165-09/626-2014</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:14.40000057px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:GOST type A;-inkscape-font-specification:Sans Italic"
+     x="1530.7087"
+     y="2298.8975"
+     id="text3193"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3195"
+       x="1530.7087"
+       y="2298.8975">У</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:14.40000057px;font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:GOST type A;-inkscape-font-specification:Sans Italic"
+     x="1545.5133"
+     y="2298.8975"
+     id="text3197"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3199"
+       x="1545.5133"
+       y="2298.8975">Р</tspan></text>
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 0,0 0,2979.9211 2104.7244,0 0,-2979.9211 z"
+     id="path3078"
+     inkscape:connector-curvature="0"
+     transform="matrix(0.80000005,0,0,0.80000005,0,-1.3335306e-4)" />
+</svg>

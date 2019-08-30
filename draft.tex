@@ -1,0 +1,57 @@
+\documentclass[utf8,a3paper,columnvii]{eskdgraph}
+% черная магия XeTeX
+\input{./header.tex}
+% смена типа листа по ЕСКД
+\usepackage{eskdchngsheet}
+% полуторный интервал
+\renewcommand{\baselinestretch}{1.5}
+% динамический интервал
+\usepackage{setspace}
+% многостраничные таблицы
+\usepackage{longtable}
+% управление заголовком таблицы
+\usepackage{caption}
+% графика
+\usepackage{graphicx}
+\usepackage{float}
+% пустые индикаторы меток в subfigure
+\usepackage[labelformat=empty]{subcaption}
+% содержание в pdf
+\usepackage{listings}
+% ссылки в оглавлении
+\usepackage{hyperref}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Название курсового проекта
+%\ESKDtitle{САПР для ПЛИС}
+% Шифр проекта
+%\ESKDsignature{КП-ПРИС-09/626-2013}
+% Автор курсового проекта
+%\ESKDauthor{Щекотов М.М.}
+% Утверждено (для титульного листа по ЕСКД)
+%\ESKDtitleApprovedBy{ст. преподаватель каф. ИВК}{Грачева Н.О.}
+% Дата создания документа
+%\ESKDdate{2013/05/20}
+% Учебная группа
+%\ESKDcolumnIX{ИСТд-41}
+% Проверил
+%\ESKDcolumnXIfII{Грачева Н.О.}
+
+\ESKDcolumnI{ИС управления учебными ресурсами}
+\ESKDcolumnII{КП-ПРИС-09/626-2013}
+\ESKDcolumnIVfII{У}
+\ESKDcolumnIX{ИСТд-41}
+\ESKDcolumnXIfI{Щекотов М.М.}
+\ESKDcolumnXIfII{Грачева Н.О.}
+\ESKDdate{2013/05/24}
+\date{2013/05/24}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{./gui/menu.png}
+  \label{fig:menu}
+\end{figure}
+\end{document}

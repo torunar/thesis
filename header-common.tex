@@ -1,0 +1,82 @@
+% динамический интервал
+\usepackage{setspace}
+% многостраничные таблицы
+\usepackage{longtable}
+% новые выравнивания колонок таблиц
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash\hspace{0pt}}p{#1}}
+% управление заголовком таблицы
+\usepackage{caption}
+% графика
+\usepackage{graphicx}
+\usepackage{float}
+% пустые индикаторы меток в subfigure
+\usepackage[labelformat=empty]{subcaption}
+% содержание в pdf
+\usepackage{listings}
+% исходники
+\newfontfamily{\cyrillicfonttt}{Courier New}
+\usepackage{listings}
+\lstset{
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=2,
+  xleftmargin=1cm
+}
+% underline
+\usepackage[normalem]{ulem}
+% multirow
+\usepackage{multirow}
+% разные форматы нумерации
+\usepackage{enumitem}
+
+% Русский язык для enum/item
+\AddEnumerateCounter{\Asbuk}{\@Asbuk}{\CYRM}
+\AddEnumerateCounter{\asbuk}{\@asbuk}{\cyrm}
+
+% fix for Qclev
+%\setlist[enumerate]{leftmargin=*,nolistsep,label=\arabic*)}
+%\setlist[itemize]{leftmargin=*,nolistsep}
+
+\setlist[enumerate]{leftmargin=1cm,label=\arabic*)}
+\setlist[itemize]{leftmargin=1cm}
+
+\captionsetup[longtable]{justification=raggedleft}
+\captionsetup[table]{justification=raggedleft}
+\captionsetup[figure]{aboveskip=6pt,belowskip=10pt}
+
+% ссылки в оглавлении и фикс для UTF16
+\usepackage[unicode,pdfencoding=auto]{hyperref}
+
+% нумерация параграфов
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+% отступы абзацев и заголовков
+\setlength{\parindent}{1cm}
+\ESKDsectSkip{section}{30pt}{18pt}
+\ESKDsectSkip{subsection}{24pt}{18pt}
+\ESKDsectSkip{subsubsection}{18pt}{12pt}
+\ESKDsectStyle{subsubsection}{\mdseries}
+
+\ESKDsectAlign{section}{Center}
+\ESKDsectAlign{subsection}{Center}
+\ESKDsectAlign{subsubsection}{Center}
+
+% счетчики
+\usepackage{totcount}
+\regtotcounter{section}
+\regtotcounter{page}
+\regtotcounter{figure}
+\regtotcounter{table}
+\regtotcounter{appendix}

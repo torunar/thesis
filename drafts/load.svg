@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1488.189"
+   height="1052.3622"
+   viewBox="-4.05 -0.05 40.069239 29.657693"
+   id="svg3307"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="load-draft.svg"
+   inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+   inkscape:export-xdpi="168.67"
+   inkscape:export-ydpi="168.67">
+  <metadata
+     id="metadata3589">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3587" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1342"
+     inkscape:window-height="719"
+     id="namedview3585"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="570.22517"
+     inkscape:cy="711.02837"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3307"
+     inkscape:document-units="mm"
+     inkscape:showpageshadow="false"
+     units="mm"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="1,0"
+       position="17.716535,0"
+       id="guide4363" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="1470.2835,646"
+       id="guide4365" />
+  </sodipodi:namedview>
+  <line
+     x1="32.726765"
+     y1="7.7678933"
+     x2="32.726765"
+     y2="23.125437"
+     id="line3309"
+     style="stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png" />
+  <line
+     x1="24.3582"
+     y1="7.7403269"
+     x2="24.3582"
+     y2="22.028517"
+     id="line3311"
+     style="stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <line
+     x1="15.989641"
+     y1="7.7684569"
+     x2="15.989641"
+     y2="20.903461"
+     id="line3313"
+     style="stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polyline
+     points="21.000,2.000 21.000,2.000 21.000,2.000 21.000,28.000 "
+     id="polyline3315"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <path
+     d="m 4.9863711,4.3651681 4.3395656,0 c 0.5988172,0 1.0846603,0.2520118 1.0846603,0.5625267 0,0.3105149 -0.4858431,0.5625269 -1.0846603,0.5625269 l -4.3395656,0 c -0.5988161,0 -1.0846581,-0.252012 -1.0846581,-0.5625269 0,-0.3105149 0.485842,-0.5625267 1.0846581,-0.5625267"
+     id="path3317"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <path
+     d="m 4.9863711,4.3651681 4.3395656,0 c 0.5988172,0 1.0846603,0.2520118 1.0846603,0.5625267 0,0.3105149 -0.4858431,0.5625269 -1.0846603,0.5625269 l -4.3395656,0 c -0.5988161,0 -1.0846581,-0.252012 -1.0846581,-0.5625269 0,-0.3105149 0.485842,-0.5625267 1.0846581,-0.5625267"
+     id="path3319"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="7.8715854"
+     y="4.5207391"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3321"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">НАЧАЛО</text>
+  <polygon
+     points="21,10 15,8 21,6 27,8 "
+     id="polygon3323"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="21,10 15,8 21,6 27,8 "
+     id="polygon3325"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="7.8715854"
+     y="8.0852003"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3327"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Загрузка отменена</text>
+  <polygon
+     points="29.272,5 13,5 13.728,3 30,3 "
+     id="polygon3329"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="29.272,5 13,5 13.728,3 30,3 "
+     id="polygon3331"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="8.1272831"
+     y="6.039598"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3333"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">
+    <tspan
+       style="font-size:0.45091234px;font-style:italic;letter-spacing:0.00056364000000000px;stroke-width:0.04992878000000000;-inkscape-font-specification:GOST type A Italic"
+       id="tspan3591">Показать диалоговое окно выбора файла</tspan>
+  </text>
+  <rect
+     x="4.831552"
+     y="18.428339"
+     width="4.6492023"
+     height="1.1250539"
+     id="rect3335"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="4.831552"
+     y="18.428339"
+     width="4.6492023"
+     height="1.1250539"
+     id="rect3337"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="7.8715854"
+     y="17.290403"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3339"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Закрыть файл</text>
+  <rect
+     x="4.831552"
+     y="14.490651"
+     width="4.6492023"
+     height="1.1250539"
+     id="rect3341"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="4.831552"
+     y="14.490651"
+     width="4.6492023"
+     height="1.1250539"
+     id="rect3343"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="7.8715854"
+     y="13.7106"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3345"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Открыть файл для чтения</text>
+  <rect
+     x="3.4367929"
+     y="20.115921"
+     width="7.4387231"
+     height="1.6875808"
+     id="rect3347"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="3.4367929"
+     y="20.115921"
+     width="7.4387231"
+     height="1.6875808"
+     id="rect3349"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="7.8715854"
+     y="18.875746"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3351"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Преобразовать строку в XML-дерево документа</text>
+  <text
+     x="7.8715854"
+     y="19.284863"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3353"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">xml = QDomDocument(content)</text>
+  <text
+     x="4.2917824"
+     y="7.906209"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3355"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">ДА</text>
+  <polygon
+     points="21,16 15,14 21,12 27,14 "
+     id="polygon3357"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="21,16 15,14 21,12 27,14 "
+     id="polygon3359"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="7.8715854"
+     y="11.153602"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3361"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Выбран не SVE-файл</text>
+  <text
+     x="4.2917824"
+     y="10.916821"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3363"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">ДА</text>
+  <text
+     x="8.0827913"
+     y="9.5938282"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3365"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">НЕТ</text>
+  <polygon
+     points="25.908,24 15,24 16.092,21 27,21 "
+     id="polygon3367"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="25.908,24 15,24 16.092,21 27,21 "
+     id="polygon3369"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="7.8715854"
+     y="15.295941"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3371"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Прочитать файл в строку</text>
+  <text
+     x="7.8715854"
+     y="15.705061"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3373"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">content = file.readAll()</text>
+  <rect
+     x="12.270277"
+     y="6.0527468"
+     width="7.4387231"
+     height="1.6875808"
+     id="rect3375"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="12.270277"
+     y="6.0527468"
+     width="7.4387231"
+     height="1.6875808"
+     id="rect3377"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="17.58819"
+     y="6.0907369"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3379"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Выбрать из XML-дерева элементы &lt;label&gt;</text>
+  <text
+     x="17.58819"
+     y="6.4998598"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3381"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">labels = xml-&gt;getElements(&quot;label&quot;)</text>
+  <rect
+     x="12.735198"
+     y="12.240544"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3383"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="12.735198"
+     y="12.240544"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3385"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="17.58819"
+     y="11.665002"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3387"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">labelNode = new LabelNode(label)</text>
+  <rect
+     x="12.735198"
+     y="13.928124"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3389"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="12.735198"
+     y="13.928124"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3391"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="17.58819"
+     y="13.199202"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3393"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">labelNode-&gt;setText(label-&gt;attribute(&quot;text&quot;))</text>
+  <rect
+     x="13.665038"
+     y="15.615706"
+     width="4.6492023"
+     height="2.2501078"
+     id="rect3395"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="13.665038"
+     y="15.615706"
+     width="4.6492023"
+     height="2.2501078"
+     id="rect3397"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="15.261318"
+     y="14.83568"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3399"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">labelNode-&gt;setPosition(</text>
+  <text
+     x="15.261318"
+     y="15.244803"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3401"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">label-&gt;attribute(&quot;x&quot;),</text>
+  <text
+     x="15.261318"
+     y="15.65392"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3403"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">label-&gt;attribute(&quot;y&quot;))</text>
+  <rect
+     x="13.665038"
+     y="18.428339"
+     width="4.6492023"
+     height="1.6875808"
+     id="rect3405"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="13.665038"
+     y="18.428339"
+     width="4.6492023"
+     height="1.6875808"
+     id="rect3407"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="17.58819"
+     y="17.341541"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3409"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Добавить labelNode</text>
+  <text
+     x="17.58819"
+     y="17.750666"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3411"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">в рабочую область документа</text>
+  <polygon
+     points="36,31 37,32 43,32 44,31 44,29 36,29 "
+     id="polygon3413"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="36,31 37,32 43,32 44,31 44,29 36,29 "
+     id="polygon3415"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="17.58819"
+     y="19.566135"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3417"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Labels</text>
+  <rect
+     x="12.735198"
+     y="10.552963"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3419"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="12.735198"
+     y="10.552963"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3421"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="17.58819"
+     y="10.130799"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3423"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Выбрать следующий label из labels</text>
+  <text
+     x="8.1129637"
+     y="12.66223"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3425"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">НЕТ</text>
+  <polygon
+     points="36,8 37,7 43,7 44,8 44,10 36,10 "
+     id="polygon3427"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="36,8 37,7 43,7 44,8 44,10 36,10 "
+     id="polygon3429"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="17.58819"
+     y="8.0749683"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3431"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Labels</text>
+  <text
+     x="17.58819"
+     y="8.484601"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3433"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">пока не достигнут</text>
+  <text
+     x="17.58819"
+     y="8.8937235"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3435"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">конец массива labels</text>
+  <rect
+     x="21.103762"
+     y="10.552963"
+     width="6.5014453"
+     height="1.1250539"
+     id="rect3437"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="21.103762"
+     y="10.552963"
+     width="6.5014453"
+     height="1.1250539"
+     id="rect3439"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="26.789299"
+     y="10.130799"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3441"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Выбрать следующий node из nodes</text>
+  <rect
+     x="21.568684"
+     y="16.768887"
+     width="5.5790424"
+     height="2.2501078"
+     id="rect3443"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="21.568684"
+     y="16.768887"
+     width="5.5790424"
+     height="2.2501078"
+     id="rect3445"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="23.955122"
+     y="15.884051"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3447"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">elementNode-&gt;setPosition(</text>
+  <text
+     x="23.955122"
+     y="16.293171"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3449"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">node-&gt;attribute(&quot;x&quot;),</text>
+  <text
+     x="23.955122"
+     y="16.70229"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3451"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">node-&gt;attribute(&quot;y&quot;))</text>
+  <rect
+     x="21.568684"
+     y="19.553398"
+     width="5.5790424"
+     height="1.6875808"
+     id="rect3453"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="21.568684"
+     y="19.553398"
+     width="5.5790424"
+     height="1.6875808"
+     id="rect3455"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="26.793392"
+     y="18.364342"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3457"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Добавить elementNode</text>
+  <text
+     x="26.793392"
+     y="18.773464"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3459"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">в рабочую область документа</text>
+  <rect
+     x="21.568684"
+     y="12.268671"
+     width="5.5790424"
+     height="2.2501078"
+     id="rect3461"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="21.568684"
+     y="12.268671"
+     width="5.5790424"
+     height="2.2501078"
+     id="rect3463"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="23.955122"
+     y="11.792851"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3465"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">plugin =</text>
+  <text
+     x="23.955122"
+     y="12.201972"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3467"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">document-&gt;getPluginByName(</text>
+  <text
+     x="23.955122"
+     y="12.611092"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3469"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">node-&gt;attribute(&quot;plugin&quot;))</text>
+  <rect
+     x="21.103762"
+     y="15.081307"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3471"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="21.103762"
+     y="15.081307"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3473"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="26.793392"
+     y="14.247574"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3475"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">elementNode = ElementNode (node, plugin)</text>
+  <polygon
+     points="54,8 55,7 61,7 62,8 62,10 54,10 "
+     id="polygon3477"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="54,8 55,7 61,7 62,8 62,10 54,10 "
+     id="polygon3479"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="26.793392"
+     y="8.0749683"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3481"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Nodes</text>
+  <text
+     x="26.793392"
+     y="8.484601"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3483"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">пока не достигнут</text>
+  <text
+     x="26.793392"
+     y="8.8937235"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3485"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">конец массива nodes</text>
+  <polygon
+     points="54,33 55,34 61,34 62,33 62,31 54,31 "
+     id="polygon3487"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="54,33 55,34 61,34 62,33 62,31 54,31 "
+     id="polygon3489"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="26.793392"
+     y="20.588936"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3491"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Nodes</text>
+  <rect
+     x="20.63884"
+     y="6.0527468"
+     width="7.4387231"
+     height="1.6875808"
+     id="rect3493"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="20.63884"
+     y="6.0527468"
+     width="7.4387231"
+     height="1.6875808"
+     id="rect3495"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="26.793392"
+     y="6.0907369"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3497"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Выбрать из XML-дерева элементы &lt;node&gt;</text>
+  <text
+     x="26.793392"
+     y="6.4998598"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3499"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">nodes = xml-&gt;getElements(&quot;node&quot;)</text>
+  <rect
+     x="29.007406"
+     y="6.0527468"
+     width="7.4387231"
+     height="1.6875808"
+     id="rect3501"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="29.007406"
+     y="6.0527468"
+     width="7.4387231"
+     height="1.6875808"
+     id="rect3503"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="35.998596"
+     y="6.0907369"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3505"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Выбрать из XML-дерева элементы &lt;link&gt;</text>
+  <text
+     x="35.998596"
+     y="6.4998598"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3507"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">links = xml-&gt;getElements(&quot;link&quot;)</text>
+  <rect
+     x="29.472326"
+     y="12.240544"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3509"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="29.472326"
+     y="12.240544"
+     width="6.508883"
+     height="1.1250539"
+     id="rect3511"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="35.998596"
+     y="11.665002"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3513"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">linkNode = new LinkNode(link)</text>
+  <rect
+     x="29.472326"
+     y="10.552963"
+     width="6.5014453"
+     height="1.1250539"
+     id="rect3515"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="29.472326"
+     y="10.552963"
+     width="6.5014453"
+     height="1.1250539"
+     id="rect3517"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="35.994507"
+     y="10.130799"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3519"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Выбрать следующий link из links</text>
+  <rect
+     x="29.937244"
+     y="13.928124"
+     width="5.5790424"
+     height="2.2501078"
+     id="rect3521"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="29.937244"
+     y="13.928124"
+     width="5.5790424"
+     height="2.2501078"
+     id="rect3523"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="33.160328"
+     y="13.301479"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3525"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">linkNode-&gt;initNodes(</text>
+  <text
+     x="33.160328"
+     y="13.7106"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3527"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">link-&gt;attribute(&quot;first_id&quot;),</text>
+  <text
+     x="33.160328"
+     y="14.119725"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3529"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:start;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">link-&gt;attribute(&quot;last_id&quot;))</text>
+  <rect
+     x="29.937244"
+     y="16.740757"
+     width="5.5790424"
+     height="1.6875808"
+     id="rect3531"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <rect
+     x="29.937244"
+     y="16.740757"
+     width="5.5790424"
+     height="1.6875808"
+     id="rect3533"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="35.998596"
+     y="15.807342"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3535"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Добавить linkNode</text>
+  <text
+     x="35.998596"
+     y="16.216463"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3537"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">в рабочую область документа</text>
+  <polygon
+     points="72,8 73,7 79,7 80,8 80,10 72,10 "
+     id="polygon3539"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="72,8 73,7 79,7 80,8 80,10 72,10 "
+     id="polygon3541"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="35.998596"
+     y="8.0749683"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3543"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Links</text>
+  <text
+     x="35.998596"
+     y="8.484601"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3545"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">пока не достигнут</text>
+  <text
+     x="35.998596"
+     y="8.8937235"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3547"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">конец массива links</text>
+  <polygon
+     points="72,28 73,29 79,29 80,28 80,26 72,26 "
+     id="polygon3549"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="72,28 73,29 79,29 80,28 80,26 72,26 "
+     id="polygon3551"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="35.998596"
+     y="18.031929"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3553"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Links</text>
+  <polyline
+     points="21.000,31.000 21.000,35.000 31.000,35.000 31.000,1.950 40.000,1.950 40.000,3.000 "
+     id="polyline3555"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polyline
+     points="40.000,32.000 40.000,35.000 49.000,35.000 49.000,2.000 58.000,2.000 58.000,3.000 "
+     id="polyline3557"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polyline
+     points="58.000,34.000 58.000,35.000 67.000,35.000 67.000,1.950 76.000,1.950 76.000,3.000 "
+     id="polyline3559"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <path
+     d="m 30.556982,22.928559 4.339566,0 c 0.598818,0 1.084659,0.252011 1.084659,0.562525 0,0.310517 -0.485841,0.562529 -1.084659,0.562529 l -4.339566,0 c -0.598815,0 -1.084654,-0.252012 -1.084654,-0.562529 0,-0.310514 0.485839,-0.562525 1.084654,-0.562525"
+     id="path3561"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <path
+     d="m 30.556982,22.928559 4.339566,0 c 0.598818,0 1.084659,0.252011 1.084659,0.562525 0,0.310517 -0.485841,0.562529 -1.084659,0.562529 l -4.339566,0 c -0.598815,0 -1.084654,-0.252012 -1.084654,-0.562529 0,-0.310514 0.485839,-0.562525 1.084654,-0.562525"
+     id="path3563"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="35.998596"
+     y="21.396946"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3565"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">КОНЕЦ</text>
+  <path
+     d="m -2.1422502,14.490655 3.7193627,0 c 0.5137366,0 0.9298402,0.25201 0.9298402,0.562525 0,0.310515 -0.4161036,0.562528 -0.9298402,0.562528 l -3.7193627,0 c -0.5137367,0 -0.9298397,-0.252013 -0.9298397,-0.562528 0,-0.310515 0.416103,-0.562525 0.9298397,-0.562525"
+     id="path3567"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke:none;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <path
+     d="m -2.1422502,14.490655 3.7193627,0 c 0.5137366,0 0.9298402,0.25201 0.9298402,0.562525 0,0.310515 -0.4161036,0.562528 -0.9298402,0.562528 l -3.7193627,0 c -0.5137367,0 -0.9298397,-0.252013 -0.9298397,-0.562528 0,-0.310515 0.416103,-0.562525 0.9298397,-0.562525"
+     id="path3569"
+     inkscape:connector-curvature="0"
+     style="fill:none;stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="-0.3108182"
+     y="13.725944"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3571"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">ОСТАНОВ</text>
+  <line
+     x1="4.3666334"
+     y1="12.240544"
+     x2="2.9997673"
+     y2="12.240544"
+     id="line3573"
+     style="stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="12.096,15 -2.176,15 -1.448,13 12.824,13 "
+     id="polygon3575"
+     style="fill:#ffffff;stroke:none;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <polygon
+     points="12.096,15 -2.176,15 -1.448,13 12.824,13 "
+     id="polygon3577"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <text
+     x="-0.14512458"
+     y="11.153602"
+     font-size="0.80"
+     font-style="normal"
+     font-weight="400"
+     id="text3579"
+     style="font-size:0.45091234px;font-style:italic;font-weight:400;letter-spacing:0.00056364000000000px;text-anchor:middle;fill:#000000;stroke-width:0.04992878000000000;font-family:GOST type A;-inkscape-font-specification:GOST type A Italic"
+     transform="scale(0.90911231,1.0999741)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79">Показать сообщение об ошибке</text>
+  <polyline
+     points="15.000,8.000 15.000,8.000 -4.000,8.000 -4.000,17.000 5.000,17.000 5.000,18.000 "
+     id="polyline3581"
+     style="fill:none;stroke:#000000;stroke-width:0.09763152000000000"
+     transform="matrix(0.46492022,0,0,0.56252695,-2.6071699,4.3651681)"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+  <line
+     x1="-0.2799249"
+     y1="12.799357"
+     x2="-0.27957895"
+     y2="13.913656"
+     id="line3583"
+     style="stroke:#000000;stroke-width:0.04992878000000000"
+     inkscape:export-filename="/home/torunar/edu/Диплом/tex/diagrams/block-schemes/load-draft.png"
+     inkscape:export-xdpi="118.79"
+     inkscape:export-ydpi="118.79" />
+</svg>
